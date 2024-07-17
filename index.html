@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Homepage</title>
   </head>
   <body>
@@ -13,30 +14,29 @@
             <img src="#" alt="main-logo" class="main-logo" />
           </a>
         </li>
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link">
+            <img src="#" alt="main-logo" class="main-logo" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="./products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="./creators.html" class="nav-link">
+            Creators <span class="nav-new-highlight">new</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </li>
       </ul>
-      <li class="nav-item">
-        <a href="./index.html" class="nav-link">
-          <img src="#" alt="main-logo" class="main-logo" />
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="./about.html" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="./products.html" class="nav-link">Products</a>
-      </li>
-      <li class="nav-item">
-        <a href="./creators.html" class="nav-link">
-          Creators <span class="nav-new-highlight">new</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="./blog.html" class="nav-link">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a href="./contact.html" class="nav-link">Contact</a>
-      </li>
-
       <div class="nav-account-options">
         <a href="#" class="nav-account-item">
           <img src="#" alt="profileIcon" class="profile-icon" />
@@ -57,8 +57,15 @@
         assets at your fingertips.
       </h3>
       <div class="search-container">
-        <p class="main-text">Find fonts, templates, illustrations, and more…</p>
-        <a href="#" class="main-search-btn">Search Now</a>
+        <form action="#" class="main-form">
+          <input
+            type="text"
+            placeholder="Find fonts, templates, illustrations, and more…"
+            class="main-search-input"
+            required
+          />
+          <input type="submit" value="Search Now" class="main-search-btn" />
+        </form>
       </div>
       <figure class="main-illustration-container">
         <img src="#" alt="MainImg" class="main-illustration" />
@@ -68,25 +75,471 @@
         <img src="#" alt="FontIcon" class="font-icon" />
         <img src="#" alt="OtherImg" class="fourth-illustration" />
       </figure>
-      <section class="product-container">
-        <ul class="product-list">
-          <li class="product-item">
-            <img src="#" alt="ProductImg" class="product-img" />
+    </main>
+    <section class="product-container">
+      <ul class="product-list">
+        <li class="product-item">
+          <img src="#" alt="ProductImg" class="product-img" />
+        </li>
+        <li class="product-item">
+          <img src="#" alt="ProductImg" class="product-img" />
+        </li>
+        <li class="product-item">
+          <img src="#" alt="ProductImg" class="product-img" />
+        </li>
+        <li class="product-item">
+          <img src="#" alt="ProductImg" class="product-img" />
+        </li>
+        <li class="product-item">
+          <img src="#" alt="ProductImg" class="product-img" />
+        </li>
+      </ul>
+    </section>
+    <section class="spotlight-container">
+      <div class="spotlight-header">
+        <h2 class="spotlight-heading">Spotlight Digital Assets Selections</h2>
+        <a href="#" class="explore-featured">Explore Featured Works &gt;</a>
+      </div>
+      <div class="spotlight-product-container">
+        <div class="spotlight-product">
+          <img src="#" alt="SpotlightProduct" />
+          <div class="spotlight-product-details">
+            <a class="spotlight-product-title">Flexsoul</a>
+            <p class="spotlight-price">$12.00</p>
+            <ul class="spotlight-tags">
+              <li class="spotlight-tag">Yoga Studio</li>
+              <li class="spotlight-tag">
+                <img src="#" alt="TagSpacer" class="spotlight-tag-spacer" />
+              </li>
+              <li class="spotlight-tag">UI Kits</li>
+            </ul>
+          </div>
+        </div>
+        <div class="spotlight-product">
+          <img src="#" alt="SpotlightProduct" />
+          <div class="spotlight-product-details">
+            <a class="spotlight-product-title">Avery</a>
+            <p class="spotlight-price">$6.00</p>
+            <ul class="spotlight-tags">
+              <li class="spotlight-tag">Monthly Report</li>
+              <li class="spotlight-tag">
+                <img src="#" alt="TagSpacer" class="spotlight-tag-spacer" />
+              </li>
+              <li class="spotlight-tag">Presentation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="spotlight-product">
+          <img src="#" alt="SpotlightProduct" />
+          <div class="spotlight-product-details">
+            <a class="spotlight-product-title">Studio</a>
+            <p class="spotlight-price">$8.00</p>
+            <ul class="spotlight-tags">
+              <li class="spotlight-tag">Business Proposal</li>
+              <li class="spotlight-tag">
+                <img src="#" alt="TagSpacer" class="spotlight-tag-spacer" />
+              </li>
+              <li class="spotlight-tag">Print Template</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trending-container">
+      <div class="trending-header">
+        <h2 class="trending-heading">Trending Products</h2>
+        <a href="#" class="explore-trending">Explore Trending Works &gt;</a>
+      </div>
+      <div class="trending-products-container">
+        <div class="trending-product">
+          <figure class="trending-product-illustration">
+            <img src="#" alt="TrendingProduct" />
+            <img src="#" alt="TrendingBadge" />
+          </figure>
+          <div class="trending-product-details">
+            <a class="trending-product-title">Biztar</a>
+            <p class="trending-price">$12.00</p>
+            <ul class="trending-tags">
+              <li class="trending-tag">Business Consultant</li>
+              <li class="trending-tag">
+                <img src="#" alt="TagSpacer" class="trending-tag-spacer" />
+              </li>
+              <li class="trending-tag">UI Kits</li>
+            </ul>
+          </div>
+        </div>
+        <div class="trending-product">
+          <figure class="trending-product-illustration">
+            <img src="#" alt="TrendingProduct" />
+            <img src="#" alt="TrendingBadge" />
+          </figure>
+          <div class="trending-product-details">
+            <a class="trending-product-title">Auxell</a>
+            <p class="trending-price">$8.00</p>
+            <ul class="trending-tags">
+              <li class="trending-tag">Company Proposal</li>
+              <li class="trending-tag">
+                <img src="#" alt="TagSpacer" class="trending-tag-spacer" />
+              </li>
+              <li class="trending-tag">Print Template</li>
+            </ul>
+          </div>
+        </div>
+        <div class="trending-product">
+          <figure class="trending-product-illustration">
+            <img src="#" alt="TrendingProduct" />
+            <img src="#" alt="TrendingBadge" />
+          </figure>
+          <div class="trending-product-details">
+            <a class="trending-product-title">Phitaya</a>
+            <p class="trending-price">$10.00</p>
+            <ul class="trending-tags">
+              <li class="trending-tag">Handwritten Font</li>
+              <li class="trending-tag">
+                <img src="#" alt="TagSpacer" class="trending-tag-spacer" />
+              </li>
+              <li class="trending-tag">Fonts</li>
+            </ul>
+          </div>
+        </div>
+        <div class="trending-product">
+          <figure class="trending-product-illustration">
+            <img src="#" alt="TrendingProduct" />
+            <img src="#" alt="TrendingBadge" />
+          </figure>
+          <div class="trending-product-details">
+            <a class="trending-product-title">Rachelle</a>
+            <p class="trending-price">$16.00</p>
+            <ul class="trending-tags">
+              <li class="trending-tag">Media Kit</li>
+              <li class="trending-tag">
+                <img src="#" alt="TagSpacer" class="trending-tag-spacer" />
+              </li>
+              <li class="trending-tag">Fonts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="trending-ad-banner">
+        <h3 class="trending-ad-heading">Beginning to Creativity</h3>
+        <p class="trending-ad-details">
+          Enjoy a 20% discount on all of Graphics and Designs for the first-time
+          payment.
+        </p>
+        <a class="trending-ad-btn">Shop Now</a>
+      </div>
+    </section>
+    <section class="collections-container">
+      <h2 class="collections-heading">Explore Digital Collections</h2>
+      <p class="collections-text">
+        Our diverse collections offer endless design and creative possibilities
+        for designers.
+      </p>
+      <a class="collections-button">Shop Now</a>
+      <div class="collections-list-container">
+        <ul class="collections-list">
+          <li class="collection-item">
+            <img src="#" alt="Collection" class="collections-img" />
+            <h3 class="collections-description">
+              Education Social Media Feeds
+            </h3>
+            <p class="collection-items-count">100+ Items</p>
           </li>
-          <li class="product-item">
-            <img src="#" alt="ProductImg" class="product-img" />
-          </li>
-          <li class="product-item">
-            <img src="#" alt="ProductImg" class="product-img" />
-          </li>
-          <li class="product-item">
-            <img src="#" alt="ProductImg" class="product-img" />
-          </li>
-          <li class="product-item">
-            <img src="#" alt="ProductImg" class="product-img" />
+          <li class="collection-item">
+            <img src="#" alt="Collection" class="collections-img" />
+            <h3 class="collections-description">Beauty Social Media Feeds</h3>
+            <p class="collection-items-count">250 Items</p>
           </li>
         </ul>
-      </section>
-    </main>
+        <button class="collections-cycle-btn">&gt;</button>
+      </div>
+    </section>
+    <section class="latest-container">
+      <div class="latest-header">
+        <h2 class="latest-heading">Latest Products</h2>
+        <a href="#" class="explore-latest">Explore Latest Works &gt;</a>
+      </div>
+      <div class="latest-products">
+        <div class="latest-product">
+          <img src="#" alt="latestProduct" />
+          <div class="latest-product-details">
+            <a class="latest-product-title">Cerea</a>
+            <p class="latest-tag">English Class Presentation</p>
+            <p class="latest-price">$6.00</p>
+            <button class="latest-cart"><img src="#" alt="BagIcon" /></button>
+          </div>
+        </div>
+        <div class="latest-product">
+          <img src="#" alt="latestProduct" />
+          <div class="latest-product-details">
+            <a class="latest-product-title">La Petite</a>
+            <p class="latest-tag">Handwritten Font</p>
+            <p class="latest-price">$10.00</p>
+            <button class="latest-cart"><img src="#" alt="BagIcon" /></button>
+          </div>
+        </div>
+        <div class="latest-product">
+          <img src="#" alt="latestProduct" />
+          <div class="latest-product-details">
+            <a class="latest-product-title">Gaya</a>
+            <p class="latest-tag">Fishion Store Mobile App</p>
+            <p class="latest-price">$20.00</p>
+            <button class="latest-cart"><img src="#" alt="BagIcon" /></button>
+          </div>
+        </div>
+        <div class="latest-product">
+          <img src="#" alt="latestProduct" />
+          <div class="latest-product-details">
+            <a class="latest-product-title">Retro Computer</a>
+            <p class="latest-tag">Planner Social Media Feeds</p>
+            <p class="latest-price">$8.00</p>
+            <button class="latest-cart"><img src="#" alt="BagIcon" /></button>
+          </div>
+        </div>
+        <div class="latest-product">
+          <img src="#" alt="latestProduct" />
+          <div class="latest-product-details">
+            <a class="latest-product-title">ArtVerse</a>
+            <p class="latest-tag">AI Tools Website Design</p>
+            <p class="latest-price">$12.00</p>
+            <button class="latest-cart"><img src="#" alt="BagIcon" /></button>
+          </div>
+        </div>
+        <div class="latest-product">
+          <img src="#" alt="latestProduct" />
+          <div class="latest-product-details">
+            <a class="latest-product-title">Airport</a>
+            <p class="latest-tag">Sign Icon Illustration Set</p>
+            <p class="latest-price">$10.00</p>
+            <button class="latest-cart"><img src="#" alt="BagIcon" /></button>
+          </div>
+        </div>
+        <div class="latest-product">
+          <img src="#" alt="latestProduct" />
+          <div class="latest-product-details">
+            <a class="latest-product-title">Hazzel</a>
+            <p class="latest-tag">Business School Presentation</p>
+            <p class="latest-price">$6.00</p>
+            <button class="latest-cart"><img src="#" alt="BagIcon" /></button>
+          </div>
+        </div>
+        <div class="latest-product">
+          <img src="#" alt="latestProduct" />
+          <div class="latest-product-details">
+            <a class="latest-product-title">Chrev</a>
+            <p class="latest-tag">Crypto Wallet Mobile App</p>
+            <p class="latest-price">$20.00</p>
+            <button class="latest-cart"><img src="#" alt="BagIcon" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-container">
+      <h2 class="faq-heading">We Have Answers to All of Your Questions</h2>
+      <details class="faq">
+        <summary class="faq-summary">Can I request a refund?</summary>
+        <p></p>
+      </details>
+      <details class="faq">
+        <summary class="faq-summary">
+          How do I access my purchased products?
+        </summary>
+        <p>
+          Accessing your purchased products is seamless and hassle-free on our
+          digital design assets marketplace. Simply log in to your account,
+          navigate to the 'My Purchases' section, and you'll find all your
+          purchased products ready for download.
+        </p>
+      </details>
+      <details class="faq">
+        <summary class="faq-summary">
+          Are there any discounts for bulk purchases?
+        </summary>
+        <p></p>
+      </details>
+      <details class="faq">
+        <summary class="faq-summary">
+          What payment methods do you accept here?
+        </summary>
+        <p></p>
+      </details>
+      <details class="faq">
+        <summary class="faq-summary">
+          Can I sell my digital products on this marketplace?
+        </summary>
+        <p></p>
+      </details>
+    </section>
+    <section class="join-us-container">
+      <figure class="join-us-illustration">
+        <img src="#" alt="#" class="join-us-img" />
+        <img src="#" alt="#" class="join-us-img" />
+        <img src="#" alt="#" class="join-us-img" />
+        <img src="#" alt="#" class="join-us-img" />
+      </figure>
+      <h2 class="join-us-heading">Join Our Digital Creative Revolution</h2>
+      <p class="join-us-text">
+        Share your talent with the world and become a part of our ever-growing
+        community of creators.
+      </p>
+      <a href="#" class="join-us-btn">Become A Creator</a>
+    </section>
+    <section class="blog-container">
+      <div class="blog-header">
+        <p class="blog-text">BLOG</p>
+        <h2 class="blog-heading">Latest Expert Design Insights</h2>
+        <button class="blog-cycle-back">&lt;</button>
+        <button class="blog-cycle-back">&gt;</button>
+      </div>
+      <ul class="blogs-list">
+        <li class="blog-item">
+          <article class="article-container">
+            <figure class="article-illustration">
+              <img src="#" alt="#" class="article-img" />
+              <p class="article-tag">TYPOGRAPHY</p>
+            </figure>
+            <h3 class="article-heading">
+              Mastering the Art of Typography: Tips for Eye-Catching Designs
+            </h3>
+            <p class="article-date">5 APRIL 2024</p>
+          </article>
+        </li>
+        <li class="blog-item">
+          <article class="article-container">
+            <figure class="article-illustration">
+              <img src="#" alt="#" class="article-img" />
+              <p class="article-tag">UI/UX DESIGN</p>
+            </figure>
+            <h3 class="article-heading">
+              The Ultimate Guide to UI/UX: Enhancing App User Experience with
+              Design
+            </h3>
+            <p class="article-date">16 MARCH 2024</p>
+          </article>
+        </li>
+        <li class="blog-item">
+          <article class="article-container">
+            <figure class="article-illustration">
+              <img src="#" alt="#" class="article-img" />
+              <p class="article-tag">DESIGN TRENDS</p>
+            </figure>
+            <h3 class="article-heading">
+              2024’s Top Graphic Design Trends: What Would Be Shaping the Future
+              of Design?
+            </h3>
+            <p class="article-date">27 FEBRUARY 2024</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <footer class="page-footer">
+      <div class="newsletter-container">
+        <h2 class="footer-heading">Stay ahead of the curve with us.</h2>
+        <form action="#" class="footer-form">
+          <input
+            type="text"
+            placeholder="Enter your email address ..."
+            class="main-search-input"
+            required
+          />
+          <input type="submit" value="Search Now" class="main-search-btn" />
+        </form>
+      </div>
+      <div class="footer-nav-container">
+        <nav class="footer-nav">
+          <ul class="company-nav">
+            <li class="company-item">
+              <h3 class="company-heading">Company</h3>
+            </li>
+            <li class="company-item">
+              <a href="#" class="nav-link">Homepage v1</a>
+            </li>
+            <li class="company-item">
+              <a href="#" class="nav-link">Homepage v2</a>
+            </li>
+            <li class="company-item">
+              <a href="#" class="nav-link">Homepage v3</a>
+            </li>
+            <li class="company-item">
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="company-item">
+              <a href="#" class="nav-link">Creators</a>
+            </li>
+            <li class="company-item">
+              <a href="#" class="nav-link">Blog Articles</a>
+            </li>
+          </ul>
+          <ul class="products-nav">
+            <li class="products-item">
+              <h3 class="products-heading">Products</h3>
+            </li>
+            <li class="products-item">
+              <a href="#" class="nav-link">Website</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="nav-link">Mobile App</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="nav-link">Social Media Feeds</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="nav-link">Presentation</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="nav-link">Product Mockups</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="nav-link">Illustrations</a>
+            </li>
+          </ul>
+          <ul class="account-nav">
+            <li class="account-item">
+              <h3 class="account-heading">Account</h3>
+            </li>
+            <li class="account-item">
+              <a href="#" class="nav-link">Your Cart</a>
+            </li>
+            <li class="account-item">
+              <a href="#" class="nav-link">Check Out</a>
+            </li>
+            <li class="account-item">
+              <a href="#" class="nav-link">Refund Policy</a>
+            </li>
+            <li class="account-item">
+              <a href="#" class="nav-link">Company Policy</a>
+            </li>
+            <li class="account-item">
+              <a href="#" class="nav-link">Send A Message</a>
+            </li>
+            <li class="account-item">
+              <a href="#" class="nav-link">Customer Support</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-text-container">
+          <img src="#" alt="#" class="footer-logo" />
+          <p class="footer-text">
+            Your premium digital assets solution with high quality and
+            comprehensive range of products and services.
+          </p>
+          <div class="social-links">
+            <a href="https://x.com/" class="social-link">TW</a>
+            <a href="https://www.instagram.com/" class="social-link">IG</a>
+            <a href="https://www.facebook.com/" class="social-link">FB</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end">
+        <div class="footer-end-links">
+          <a href="#" class="privacy-link">Privacy Policy</a>
+          <a href="#" class="terms-link">Terms and Condition</a>
+          <a href="#" class="site-map-link">Site Map</a>
+        </div>
+        <div class="footer-end-copy">
+          Copyright &copy; 2024 Pixmart. All rights reserved.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
