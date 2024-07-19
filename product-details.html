@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./index.html" class="nav-link">
+        <img src="#" alt="main-logo" class="main-logo" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="./products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="./creators.html" class="nav-link">
+            Creators <span class="nav-new-highlight">new</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-account-options">
+        <a href="#" class="nav-account-item">
+          <img src="#" alt="profileIcon" class="profile-icon" />
+        </a>
+        <a href="#" class="nav-account-link">
+          <img src="#" alt="cartIcon" class="cart-icon" />
+        </a>
+      </div>
+    </nav>
+    <main class="main-container">
+      <section class="product-container">
+        <div class="product-left">
+          <figure class="active-image-illustration">
+            <img src="#" alt="ProductImg" class="active-product-image" />
+            <button class="expand-img-btn">
+              <img src="#" alt="ExpandBtn" />
+            </button>
+          </figure>
+          <div class="product-img-selector">
+            <button class="product-select-back">&lt;</button>
+            <ul class="product-imgs-list">
+              <li class="product-img-item">
+                <img src="#" alt="ProductImg" />
+              </li>
+              <li class="product-img-item">
+                <img src="#" alt="ProductImg" />
+              </li>
+              <li class="product-img-item">
+                <img src="#" alt="ProductImg" />
+              </li>
+              <li class="product-img-item">
+                <img src="#" alt="ProductImg" />
+              </li>
+            </ul>
+            <button class="product-select-back">&gt;</button>
+          </div>
+        </div>
+        <div class="product-right">
+          <div class="rating-container">
+            <ul class="star-rating">
+              <li class="star">
+                <img src="#" alt="StarRating" class="start-rating-img" />
+              </li>
+              <li class="star">
+                <img src="#" alt="StarRating" class="start-rating-img" />
+              </li>
+              <li class="star">
+                <img src="#" alt="StarRating" class="start-rating-img" />
+              </li>
+              <li class="star">
+                <img src="#" alt="StarRating" class="start-rating-img" />
+              </li>
+              <li class="star">
+                <img src="#" alt="StarRating" class="start-rating-img" />
+              </li>
+            </ul>
+            <p class="rating-num">(<span class="rating-count">50</span>)</p>
+          </div>
+          <div class="product-header">
+            <h1 class="product-heading">Griya – Real Estate Dashboard UI</h1>
+            <div class="supplier-container">
+              <img src="#" alt="SupplierLogo" class="supplier-logo" />
+              <h2 class="supplier-name">Tech Pioneers</h2>
+            </div>
+            <p class="product-description">
+              The "Griya Real Estate Dashboard UI" is meticulously designed for
+              real estate entrepreneurs and startups looking to make a
+              significant impact online.
+            </p>
+            <hr />
+            <div class="price-selection">
+              <div class="price-container">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="standard-license"
+                    value="standard-license"
+                  />
+                  Standard License
+                </label>
+                <p class="price">$16.00</p>
+              </div>
+              <div class="price-container">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="extended-license"
+                    value="extended-license"
+                  />
+                  Extended Licenses
+                </label>
+                <p class="price">$49.00</p>
+              </div>
+            </div>
+            <div class="quantity-container">
+              <div class="quantity-selector">
+                <button class="quantity-button" id="decrement">-</button>
+                <input
+                  type="number"
+                  class="quantity-input"
+                  id="quantity"
+                  value="1"
+                  min="1"
+                />
+                <button class="quantity-button" id="increment">+</button>
+              </div>
+              <p class="current-price">$16.00</p>
+            </div>
+            <div class="product-btns">
+              <button class="preview-btn">Preview</button>
+              <a class="purchase-link">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-details-container">
+        <div class="details-left">
+          <div class="overview">
+            <h2 class="overview-heading">Overview</h2>
+            <p class="overview-text">
+              With over 100+ meticulously designed components, this dashboard UI
+              kit is your go-to resource for building intuitive, sleek, and user
+              - friendly real estate - related websites or applications.
+              Tailored to meet the unique demands of the tech industry, it
+              combines functionality with cutting-edge design trends to help you
+              launch your project with confidence and style.
+            </p>
+          </div>
+          <div class="pages-included">
+            <h2 class="pages-heading">Pages Included:</h2>
+            <ul class="pages-list">
+              <li class="pages-item">Dashboard Page</li>
+              <li class="pages-item">Order Page</li>
+              <li class="pages-item">Property Details</li>
+              <li class="pages-item">Customers List</li>
+              <li class="pages-item">Analytics Page</li>
+              <li class="pages-item">Review Page</li>
+            </ul>
+          </div>
+          <div class="product-included">
+            <h2 class="product-heading">Product Features:</h2>
+            <ul class="product-list">
+              <li class="product-item">Responsive Design</li>
+              <li class="product-item">Customizable Components</li>
+              <li class="product-item">E-commerce Pages Included</li>
+              <li class="product-item">Interactive Elements</li>
+              <li class="product-item">Dark Mode Option</li>
+              <li class="product-item">Comprehensive Documentation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-right">
+          <div class="product-details">
+            <h2 class="product-details-heading">Product Details</h2>
+            <ul class="details-list">
+              <li class="details-item">
+                <div class="details-content">
+                  <div class="details-content-left">
+                    <img
+                      src="#"
+                      alt="DetailsIcon"
+                      class="details-content-img"
+                    />
+                    <p class="details-content-label">Created</p>
+                  </div>
+                  <div class="details-content-right">
+                    <p class="details-content-text">September 1, 2024</p>
+                  </div>
+                </div>
+              </li>
+              <li class="details-item">
+                <div class="details-content">
+                  <div class="details-content-left">
+                    <img
+                      src="#"
+                      alt="DetailsIcon"
+                      class="details-content-img"
+                    />
+                    <p class="details-content-label">File Size</p>
+                  </div>
+                  <div class="details-content-right">
+                    <p class="details-content-text">120 MB</p>
+                  </div>
+                </div>
+              </li>
+              <li class="details-item">
+                <div class="details-content">
+                  <div class="details-content-left">
+                    <img
+                      src="#"
+                      alt="DetailsIcon"
+                      class="details-content-img"
+                    />
+                    <p class="details-content-label">File Dimensions</p>
+                  </div>
+                  <div class="details-content-right">
+                    <p class="details-content-text">1920x1080 px</p>
+                  </div>
+                </div>
+              </li>
+              <li class="details-item">
+                <div class="details-content">
+                  <div class="details-content-left">
+                    <img
+                      src="#"
+                      alt="DetailsIcon"
+                      class="details-content-img"
+                    />
+                    <p class="details-content-label">Compatible App</p>
+                  </div>
+                  <div class="details-content-right">
+                    <p class="details-content-text">Figma, Sketch, Adobe XD</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="details-product-tags">
+            <h2 class="product-tags">Product Tags</h2>
+            <ul class="product-tags-list">
+              <li class="product-tag-item">
+                <p class="product-tag">Real Estate</p>
+              </li>
+              <li class="product-tag-item">
+                <p class="product-tag">Startup</p>
+              </li>
+              <li class="product-tag-item">
+                <p class="product-tag">UI Kit</p>
+              </li>
+              <li class="product-tag-item">
+                <p class="product-tag">Modern</p>
+              </li>
+              <li class="product-tag-item">
+                <p class="product-tag">Figma</p>
+              </li>
+              <li class="product-tag-item">
+                <p class="product-tag">Sketch</p>
+              </li>
+              <li class="product-tag-item">
+                <p class="product-tag">Adobe XD</p>
+              </li>
+              <li class="product-tag-item">
+                <p class="product-tag">Responsive</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="related-container">
+        <div class="related-header">
+          <h2 class="related-heading">Related Products</h2>
+          <a href="#" class="related-link">Explore All Works &gt;</a>
+        </div>
+        <article class="related-product">
+          <img src="#" alt="#" class="related-img" />
+          <div class="related-details">
+            <h3 class="related-product-heading">SkyHomes</h3>
+            <p class="related-description">Real Estate Landing Page</p>
+            <div class="related-product-footer">
+              <p class="related-price">$11.00</p>
+              <button class="add-product-btn">
+                <img src="#" alt="CartIcon" />
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="related-product">
+          <img src="#" alt="#" class="related-img" />
+          <div class="related-details">
+            <h3 class="related-product-heading">Gaya</h3>
+            <p class="related-description">Fashion Store Mobile App</p>
+            <div class="related-product-footer">
+              <p class="related-price">$20.00</p>
+              <button class="add-product-btn">
+                <img src="#" alt="CartIcon" />
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="related-product">
+          <img src="#" alt="#" class="related-img" />
+          <div class="related-details">
+            <h3 class="related-product-heading">MyEstate</h3>
+            <p class="related-description">Real Estate Hero Section</p>
+            <div class="related-product-footer">
+              <p class="related-price">$5.00</p>
+              <button class="add-product-btn">
+                <img src="#" alt="CartIcon" />
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="related-product">
+          <img src="#" alt="#" class="related-img" />
+          <div class="related-details">
+            <h3 class="related-product-heading">Thinky</h3>
+            <p class="related-description">Blog News Mobile App</p>
+            <div class="related-product-footer">
+              <p class="related-price">$18.00</p>
+              <button class="add-product-btn">
+                <img src="#" alt="CartIcon" />
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="explore-container">
+        <div class="explore-left">
+          <h2 class="explore-heading">Bring Your Creativity Alive</h2>
+          <p class="explore-text">
+            Explore our new exclusive digital design assets and graphic
+            collections today!
+          </p>
+          <a href="#" class="explore-shop-btn">Shop Now</a>
+        </div>
+        <div class="explore-right">
+          <img src="#" alt="textIcon" class="explore-text-img" />
+          <img src="#" alt="#" class="explore-photo" />
+        </div>
+      </div>
+      <div class="footer-left">
+        <h2 class="footer-heading">Pixmart.</h2>
+        <p class="footer-text">
+          Your premium digital assets solution with high quality and
+          comprehensive range of products and services.
+        </p>
+        <nav class="footer-nav">
+          <div class="company-nav-container">
+            <h3 class="company-heading">Company</h3>
+            <ul class="company-nav">
+              <li class="company-item">
+                <a href="#" class="nav-link">Homepage v1</a>
+              </li>
+              <li class="company-item">
+                <a href="#" class="nav-link">Homepage v2</a>
+              </li>
+              <li class="company-item">
+                <a href="#" class="nav-link">Homepage v3</a>
+              </li>
+              <li class="company-item">
+                <a href="#" class="nav-link">About Us</a>
+              </li>
+              <li class="company-item">
+                <a href="#" class="nav-link">Creators</a>
+              </li>
+              <li class="company-item">
+                <a href="#" class="nav-link">Blog Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="products-nav-container">
+            <h3 class="products-heading">Products</h3>
+            <ul class="products-nav">
+              <li class="products-item">
+                <a href="#" class="nav-link">Website</a>
+              </li>
+              <li class="products-item">
+                <a href="#" class="nav-link">Mobile App</a>
+              </li>
+              <li class="products-item">
+                <a href="#" class="nav-link">Social Media Feeds</a>
+              </li>
+              <li class="products-item">
+                <a href="#" class="nav-link">Presentation</a>
+              </li>
+              <li class="products-item">
+                <a href="#" class="nav-link">Product Mockups</a>
+              </li>
+              <li class="products-item">
+                <a href="#" class="nav-link">Illustrations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="account-nav-container">
+            <h3 class="account-heading">Account</h3>
+            <ul class="account-nav">
+              <li class="account-item">
+                <a href="#" class="nav-link">Your Cart</a>
+              </li>
+              <li class="account-item">
+                <a href="#" class="nav-link">Check Out</a>
+              </li>
+              <li class="account-item">
+                <a href="#" class="nav-link">Refund Policy</a>
+              </li>
+              <li class="account-item">
+                <a href="#" class="nav-link">Company Policy</a>
+              </li>
+              <li class="account-item">
+                <a href="#" class="nav-link">Send A Message</a>
+              </li>
+              <li class="account-item">
+                <a href="#" class="nav-link">Customer Support</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-info">
+        <div class="newsletter-container">
+          <p class="newsletter-heading">Subscribe to Newsletter</p>
+          <div class="newsletter-email">
+            <input type="email" name="email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end">
+        <ul class="footer-end-list">
+          <li class="footer-end-item">
+            <a href="#" class="privacy-link">Privacy Policy</a>
+          </li>
+          <li class="footer-end-item">
+            <a href="#" class="terms-link">Terms and Condition</a>
+          </li>
+          <li class="footer-end-item">
+            <a href="#" class="site-map-link">Site Map</a>
+          </li>
+        </ul>
+        <p class="footer-end-copy">
+          Copyright &copy; 2024 Pixmart. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
