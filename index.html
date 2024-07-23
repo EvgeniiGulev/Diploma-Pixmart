@@ -3,42 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Homepage</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="./index.html" class="nav-link">
-        <img src="#" alt="main-logo" class="main-logo" />
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="./about.html" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="./products.html" class="nav-link">Products</a>
-        </li>
-        <li class="nav-item">
-          <a href="./creators.html" class="nav-link">
-            Creators <span class="nav-new-highlight">new</span>
+    <header class="page-header">
+      <nav class="navbar">
+        <a href="./index.html" class="nav-link">
+          <img src="#" alt="main-logo" class="main-logo" />
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="./creators.html" class="nav-link">
+              Creators <span class="nav-new-highlight">new</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-account-options">
+          <a href="#" class="nav-account-item">
+            <img src="#" alt="profileIcon" class="profile-icon" />
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="./blog.html" class="nav-link">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a href="./contact.html" class="nav-link">Contact</a>
-        </li>
-      </ul>
-      <div class="nav-account-options">
-        <a href="#" class="nav-account-item">
-          <img src="#" alt="profileIcon" class="profile-icon" />
-        </a>
-        <a href="#" class="nav-account-link">
-          <img src="#" alt="cartIcon" class="cart-icon" />
-        </a>
-      </div>
-    </nav>
+          <a href="#" class="nav-account-link">
+            <img src="#" alt="cartIcon" class="cart-icon" />
+          </a>
+        </div>
+      </nav>
+    </header>
     <main class="main-container">
       <section class="hero-container">
         <h1 class="hidden-heading">Homepage Hidden Heading</h1>
@@ -46,10 +52,10 @@
           Unleash Your Creativity to Utmost
           <span class="text-highlight">Potential</span> with Us
         </h2>
-        <h3 class="main-subheading">
+        <p class="main-subheading">
           Discover the building blocks of your next masterpiece: premium digital
           assets at your fingertips.
-        </h3>
+        </p>
         <div class="search-container">
           <form action="#" class="main-form">
             <input
@@ -61,15 +67,15 @@
             <input type="submit" value="Search Now" class="main-search-btn" />
           </form>
         </div>
+        <figure class="main-illustration-container">
+          <img src="#" alt="MainImg" class="main-illustration" />
+          <img src="#" alt="RulerIcon" class="ruler-icon" />
+          <img src="#" alt="OtherImg" class="second-illustration" />
+          <img src="#" alt="OtherImg" class="third-illustration" />
+          <img src="#" alt="FontIcon" class="font-icon" />
+          <img src="#" alt="OtherImg" class="fourth-illustration" />
+        </figure>
       </section>
-      <figure class="main-illustration-container">
-        <img src="#" alt="MainImg" class="main-illustration" />
-        <img src="#" alt="RulerIcon" class="ruler-icon" />
-        <img src="#" alt="OtherImg" class="second-illustration" />
-        <img src="#" alt="OtherImg" class="third-illustration" />
-        <img src="#" alt="FontIcon" class="font-icon" />
-        <img src="#" alt="OtherImg" class="fourth-illustration" />
-      </figure>
       <section class="product-container">
         <h2 class="hidden-heading">Collection Categories</h2>
         <ul class="product-list">
@@ -112,9 +118,6 @@
                   <p class="spotlight-tag-text">Yoga Studio</p>
                 </li>
                 <li class="spotlight-tag">
-                  <img src="#" alt="TagSpacer" class="spotlight-tag-spacer" />
-                </li>
-                <li class="spotlight-tag">
                   <p class="spotlight-tag-text">UI Kits</p>
                 </li>
               </ul>
@@ -131,9 +134,6 @@
                   <p class="spotlight-tag-text">Monthly Report</p>
                 </li>
                 <li class="spotlight-tag">
-                  <img src="#" alt="TagSpacer" class="spotlight-tag-spacer" />
-                </li>
-                <li class="spotlight-tag">
                   <p class="spotlight-tag-text">Presentation</p>
                 </li>
               </ul>
@@ -148,9 +148,6 @@
               <ul class="spotlight-tags">
                 <li class="spotlight-tag">
                   <p class="spotlight-tag-text">Business Proposal</p>
-                </li>
-                <li class="spotlight-tag">
-                  <img src="#" alt="TagSpacer" class="spotlight-tag-spacer" />
                 </li>
                 <li class="spotlight-tag">
                   <p class="spotlight-tag-text">Print Template</p>
