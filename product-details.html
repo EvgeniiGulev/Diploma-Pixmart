@@ -3,41 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Product Details</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="./index.html" class="nav-link">
-        <img src="#" alt="main-logo" class="main-logo" />
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="./about.html" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="./products.html" class="nav-link">Products</a>
-        </li>
-        <li class="nav-item">
-          <a href="./creators.html" class="nav-link">
-            Creators <span class="nav-new-highlight">new</span>
+    <header class="page-header">
+      <nav class="navbar">
+        <a href="./index.html" class="nav-link">
+          <img src="#" alt="main-logo" class="main-logo" />
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="./creators.html" class="nav-link">
+              Creators <span class="nav-new-highlight">new</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-account-options">
+          <a href="#" class="nav-account-item">
+            <img src="#" alt="profileIcon" class="profile-icon" />
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="./blog.html" class="nav-link">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a href="./contact.html" class="nav-link">Contact</a>
-        </li>
-      </ul>
-      <div class="nav-account-options">
-        <a href="#" class="nav-account-item">
-          <img src="#" alt="profileIcon" class="profile-icon" />
-        </a>
-        <a href="#" class="nav-account-link">
-          <img src="#" alt="cartIcon" class="cart-icon" />
-        </a>
-      </div>
-    </nav>
+          <a href="#" class="nav-account-link">
+            <img src="#" alt="cartIcon" class="cart-icon" />
+          </a>
+        </div>
+      </nav>
+    </header>
     <main class="main-container">
       <section class="product-container">
         <div class="product-left">
@@ -46,25 +53,25 @@
             <button class="expand-img-btn">
               <img src="#" alt="ExpandBtn" />
             </button>
+            <div class="product-img-selector">
+              <button class="product-select-back">&lt;</button>
+              <ul class="product-imgs-list">
+                <li class="product-img-item">
+                  <img src="#" alt="ProductImg" />
+                </li>
+                <li class="product-img-item">
+                  <img src="#" alt="ProductImg" />
+                </li>
+                <li class="product-img-item">
+                  <img src="#" alt="ProductImg" />
+                </li>
+                <li class="product-img-item">
+                  <img src="#" alt="ProductImg" />
+                </li>
+              </ul>
+              <button class="product-select-back">&gt;</button>
+            </div>
           </figure>
-          <div class="product-img-selector">
-            <button class="product-select-back">&lt;</button>
-            <ul class="product-imgs-list">
-              <li class="product-img-item">
-                <img src="#" alt="ProductImg" />
-              </li>
-              <li class="product-img-item">
-                <img src="#" alt="ProductImg" />
-              </li>
-              <li class="product-img-item">
-                <img src="#" alt="ProductImg" />
-              </li>
-              <li class="product-img-item">
-                <img src="#" alt="ProductImg" />
-              </li>
-            </ul>
-            <button class="product-select-back">&gt;</button>
-          </div>
         </div>
         <div class="product-right">
           <div class="rating-container">
@@ -183,95 +190,68 @@
         <div class="details-right">
           <div class="product-details">
             <h2 class="product-details-heading">Product Details</h2>
-            <ul class="details-list">
-              <li class="details-item">
-                <div class="details-content">
-                  <div class="details-content-left">
-                    <img
-                      src="#"
-                      alt="DetailsIcon"
-                      class="details-content-img"
-                    />
-                    <p class="details-content-label">Created</p>
-                  </div>
-                  <div class="details-content-right">
-                    <p class="details-content-text">September 1, 2024</p>
-                  </div>
-                </div>
-              </li>
-              <li class="details-item">
-                <div class="details-content">
-                  <div class="details-content-left">
-                    <img
-                      src="#"
-                      alt="DetailsIcon"
-                      class="details-content-img"
-                    />
-                    <p class="details-content-label">File Size</p>
-                  </div>
-                  <div class="details-content-right">
-                    <p class="details-content-text">120 MB</p>
-                  </div>
-                </div>
-              </li>
-              <li class="details-item">
-                <div class="details-content">
-                  <div class="details-content-left">
-                    <img
-                      src="#"
-                      alt="DetailsIcon"
-                      class="details-content-img"
-                    />
-                    <p class="details-content-label">File Dimensions</p>
-                  </div>
-                  <div class="details-content-right">
-                    <p class="details-content-text">1920x1080 px</p>
-                  </div>
-                </div>
-              </li>
-              <li class="details-item">
-                <div class="details-content">
-                  <div class="details-content-left">
-                    <img
-                      src="#"
-                      alt="DetailsIcon"
-                      class="details-content-img"
-                    />
-                    <p class="details-content-label">Compatible App</p>
-                  </div>
-                  <div class="details-content-right">
-                    <p class="details-content-text">Figma, Sketch, Adobe XD</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <dl class="details-list">
+              <div class="details-item">
+                <dt class="details-content-label">
+                  <img src="#" alt="DetailsIcon" class="details-content-img" />
+                  Created
+                </dt>
+                <dd class="details-content-text">
+                  <time datetime="2024-09-01">September 1, 2024</time>
+                </dd>
+              </div>
+
+              <div class="details-item">
+                <dt class="details-content-label">
+                  <img src="#" alt="DetailsIcon" class="details-content-img" />
+                  File Size
+                </dt>
+                <dd class="details-content-text">120 MB</dd>
+              </div>
+
+              <div class="details-item">
+                <dt class="details-content-label">
+                  <img src="#" alt="DetailsIcon" class="details-content-img" />
+                  File Dimensions
+                </dt>
+                <dd class="details-content-text">1920x1080 px</dd>
+              </div>
+
+              <div class="details-item">
+                <dt class="details-content-label">
+                  <img src="#" alt="DetailsIcon" class="details-content-img" />
+                  Compatible App
+                </dt>
+                <dd class="details-content-text">Figma, Sketch, Adobe XD</dd>
+              </div>
+            </dl>
           </div>
           <div class="details-product-tags">
             <h2 class="product-tags">Product Tags</h2>
             <ul class="product-tags-list">
               <li class="product-tag-item">
-                <p class="product-tag">Real Estate</p>
+                <a class="product-tag">Real Estate</a>
               </li>
               <li class="product-tag-item">
-                <p class="product-tag">Startup</p>
+                <a class="product-tag">Startup</a>
               </li>
               <li class="product-tag-item">
-                <p class="product-tag">UI Kit</p>
+                <a class="product-tag">UI Kit</a>
               </li>
               <li class="product-tag-item">
-                <p class="product-tag">Modern</p>
+                <a class="product-tag">Modern</a>
               </li>
               <li class="product-tag-item">
-                <p class="product-tag">Figma</p>
+                <a class="product-tag">Figma</a>
               </li>
               <li class="product-tag-item">
-                <p class="product-tag">Sketch</p>
+                <a class="product-tag">Sketch</a>
               </li>
               <li class="product-tag-item">
-                <p class="product-tag">Adobe XD</p>
+                <a class="product-tag">Adobe XD</a>
               </li>
               <li class="product-tag-item">
-                <p class="product-tag">Responsive</p>
+                <a class="product-tag">Responsive</a>
               </li>
             </ul>
           </div>
@@ -352,7 +332,9 @@
         </div>
       </div>
       <div class="footer-left">
-        <h2 class="footer-heading">Pixmart.</h2>
+        <h2 class="footer-heading">
+          <a href="./index.html" class="footer-heading-link">Pixmart.</a>
+        </h2>
         <p class="footer-text">
           Your premium digital assets solution with high quality and
           comprehensive range of products and services.
