@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -13,9 +19,7 @@
   <body class="product-details-page">
     <header class="page-header">
       <nav class="navbar">
-        <a href="./index.html" class="nav-link">
-          <img src="#" alt="main-logo" class="main-logo" />
-        </a>
+        <a href="./index.html" class="nav-logo"> Pixmart. </a>
         <ul class="nav-list">
           <li class="nav-item">
             <a href="./about.html" class="nav-link">About</a>
@@ -25,7 +29,8 @@
           </li>
           <li class="nav-item">
             <a href="./creators.html" class="nav-link">
-              Creators <span class="nav-new-highlight">new</span>
+              Creators
+              <!-- <span class="nav-new-highlight">new</span> -->
             </a>
           </li>
           <li class="nav-item">
@@ -36,11 +41,15 @@
           </li>
         </ul>
         <div class="nav-account-options">
-          <a href="#" class="nav-account-item">
-            <img src="#" alt="profileIcon" class="profile-icon" />
+          <a href="#" class="nav-account-link">
+            <svg class="profile-icon">
+              <use href="./sprites/sprites.svg#profile"></use>
+            </svg>
           </a>
           <a href="#" class="nav-account-link">
-            <img src="#" alt="cartIcon" class="cart-icon" />
+            <svg class="cart-icon">
+              <use href="./sprites/sprites.svg#cart"></use>
+            </svg>
           </a>
         </div>
       </nav>
