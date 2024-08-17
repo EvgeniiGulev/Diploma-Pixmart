@@ -22,7 +22,8 @@ ul {
 }
 
 a:hover,
-button:hover {
+button:hover,
+input:hover {
   cursor: pointer;
   opacity: 90%;
 }
@@ -58,7 +59,8 @@ button:hover {
 .footer-end-copy,
 .footer-subscribe-input::placeholder,
 .footer-nav-link,
-.footer-text {
+.footer-text,
+.nav-new-highlight {
   font-family: "Libre Franklin", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -159,6 +161,11 @@ body {
   align-self: center;
 }
 
+.nav-item {
+  display: flex;
+  gap: 4px;
+}
+
 .nav-link {
   color: var(--text-black);
   font-size: 16px;
@@ -178,6 +185,19 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.nav-new-highlight {
+  align-self: flex-start;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 10px;
+  width: 32px;
+  height: 12px;
+  padding: 1px 6px 1px 6px;
+  border-radius: 10px;
+  background-color: var(--text-blue);
+  color: var(--text-white);
 }
 
 .nav-account-link:nth-child(1) {
