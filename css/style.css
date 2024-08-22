@@ -31,13 +31,6 @@ ul {
   list-style-type: none;
 }
 
-a:hover,
-button:hover,
-input:hover {
-  cursor: pointer;
-  opacity: 90%;
-}
-
 .hidden-heading {
   display: none;
 }
@@ -108,16 +101,6 @@ body {
   align-items: flex-end;
 }
 
-.explore-featured::after,
-.explore-trending::after,
-.explore-latest::after {
-  content: url(../imgs/down-arrow.svg);
-  width: 20px;
-  height: 20px;
-  display: block;
-  transform: rotate(-90deg);
-}
-
 .spotlight-tags,
 .trending-tags {
   display: flex;
@@ -174,12 +157,16 @@ body {
 .nav-item {
   display: flex;
   gap: 4px;
+  align-items: flex-end;
 }
 
 .nav-link {
   color: var(--text-black);
   font-size: 16px;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .nav-account-options {
@@ -196,6 +183,7 @@ body {
   align-items: center;
   border-radius: 50%;
   background-color: var(--text-light-blue);
+  transition: background-color 0.3s ease-out;
 }
 
 .nav-new-highlight {
@@ -215,16 +203,20 @@ body {
   width: 20px;
   height: 20px;
   color: var(--text-blue);
+  transition: color 0.3s ease-out;
 }
 
 .nav-account-link:hover {
   color: var(--text-white);
   background-color: var(--text-blue);
+  transition: background-color 0.3s ease;
 }
 
 .nav-account-link:hover .cart-icon,
 .nav-account-link:hover .profile-icon {
+  cursor: pointer;
   color: white;
+  transition: color 0.3s ease;
 }
 
 .main-container {
@@ -380,12 +372,14 @@ body {
   width: 224px;
   height: 224px;
   border-radius: 20px;
+  transition: background-color 0.2s ease-out;
 }
 
 .product-img {
   color: var(--text-blue);
   width: 140px;
   height: 140px;
+  transition: color 0.2s ease-out;
 }
 
 .collection-link {
@@ -737,6 +731,7 @@ body {
   border: 0;
   background-color: var(--text-light-blue);
   color: var(--text-blue);
+  transition: background-color 0.3s ease-out;
 }
 
 .latest-cart-form {
@@ -747,14 +742,19 @@ body {
   width: 20px;
   height: 20px;
   color: var(--text-blue);
+  transition: color 0.3s ease-out;
 }
 
 .latest-cart:hover .latest-cart-img {
+  cursor: pointer;
   color: var(--text-white);
+  transition: color 0.3s ease;
 }
 
 .latest-cart:hover {
+  cursor: pointer;
   background-color: var(--text-blue);
+  transition: background-color 0.3s ease;
 }
 
 .faq-container {
@@ -1248,4 +1248,45 @@ body {
   position: absolute;
   top: -20px;
   border-radius: 10px;
+}
+
+.underline-effect {
+  position: relative;
+  cursor: pointer;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  background-color: currentColor;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.underline-effect:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.new-nav-link{
+  width: 65px;
+  transition: font-weight 0.3s ease-out;
+}
+
+.new-nav-link:hover{
+  font-weight: 700;
+  transition: font-weight 0.3s ease;
+}
+
+.product-img-container:hover{
+  background-color: var(--text-blue);
+  transition: background-color 0.2s ease;
+}
+
+.product-img:hover{
+  color: var(--text-white);
+  transition: color 0.2s ease;
 }
