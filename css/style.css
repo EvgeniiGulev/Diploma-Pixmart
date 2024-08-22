@@ -5,6 +5,7 @@
   --text-light-blue: #f0f6fd;
   --back-gray: #b0b0b0;
   --back-lightgray: #d9d9d9;
+  --primary-darkblue: #1166d4;
   --footer-gradient: linear-gradient(360deg, #ffffff 0%, #f0f6fd 100%);
   --gradient-gray: linear-gradient(to bottom, #f0f6fd 0%, #ffffff 100%);
   --gradient-default: linear-gradient(90deg, #f0f6fd 44%, #ffffff 100%);
@@ -275,6 +276,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  transition: background-color 0.3s ease-out;
 }
 
 .main-illustration-container {
@@ -443,6 +445,7 @@ body {
   font-size: 28px;
   font-weight: 700;
   line-height: 40px;
+  color: var(--text-black);
 }
 
 .spotlight-price {
@@ -525,6 +528,7 @@ body {
   font-size: 28px;
   font-weight: 700;
   line-height: 40px;
+  color: var(--text-black);
 }
 
 .trending-price {
@@ -578,6 +582,7 @@ body {
   line-height: 24px;
   text-align: center;
   color: var(--text-white);
+  transition: background-color 0.3s ease-out;
 }
 
 .collections-container {
@@ -647,6 +652,7 @@ body {
   border-radius: 50%;
   background-color: var(--text-blue);
   border: 0px;
+  transition: background-color 0.3s ease-out;
 }
 
 .collection-item-text {
@@ -707,6 +713,8 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
+  color: var(--text-black);
+  width: max-content;
 }
 
 .latest-tag {
@@ -892,6 +900,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  transition: background-color 0.3s ease-out;
 }
 
 .blog-header {
@@ -1097,6 +1107,7 @@ body {
   border: 0;
   background-color: var(--text-blue);
   color: var(--text-white);
+  transition: background-color 0.3s ease-out;
 }
 
 .footer-nav-logo-wrap {
@@ -1126,6 +1137,7 @@ body {
   line-height: 24px;
   opacity: 50%;
   color: var(--text-black);
+  transition: opacity 0.3s ease-out;
 }
 
 .footer-text-container {
@@ -1271,22 +1283,37 @@ body {
   left: 0;
 }
 
-.new-nav-link{
+.new-nav-link {
   width: 65px;
   transition: font-weight 0.3s ease-out;
 }
 
-.new-nav-link:hover{
+.new-nav-link:hover {
   font-weight: 700;
   transition: font-weight 0.3s ease;
 }
 
-.product-img-container:hover{
+.product-img-container:hover {
   background-color: var(--text-blue);
   transition: background-color 0.2s ease;
 }
 
-.product-img:hover{
+.product-img:hover {
   color: var(--text-white);
   transition: color 0.2s ease;
+}
+.footer-nav-link.underline-effect:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.footer-subscribe-btn:hover,
+.join-us-btn:hover,
+.collections-cycle-btn:hover,
+.trending-ad-btn:hover,
+.collections-button:hover,
+.main-search-btn:hover {
+  background-color: var(--primary-darkblue);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
