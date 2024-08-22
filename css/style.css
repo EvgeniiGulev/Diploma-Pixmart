@@ -1209,7 +1209,7 @@ body {
   color: var(--text-blue);
   font-size: 12px;
   font-weight: 900;
-    transition:  color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .product-list,
@@ -1657,6 +1657,7 @@ input[type="number"]::-ms-expand {
   border: 0;
   color: var(--text-white);
   background-color: var(--text-blue);
+  transition: background-color 0.3s ease;
 }
 
 .product-details-container {
@@ -2108,13 +2109,13 @@ input[type="number"]::-ms-expand {
   transition: color 0.3s ease-out;
 }
 
-.social-item:hover{
+.social-item:hover {
   background-color: var(--text-blue);
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
-.social-item:hover .social-link{
-    color: var(--text-white);
-  transition:  color 0.3s ease;
+.social-item:hover .social-link {
+  color: var(--text-white);
+  transition: color 0.3s ease;
 }
