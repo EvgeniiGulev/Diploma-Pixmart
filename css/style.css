@@ -652,6 +652,9 @@ body {
   border-radius: 50%;
   background-color: var(--text-blue);
   border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.3s ease-out;
 }
 
