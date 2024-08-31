@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./imgs/favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Category</title>
+  </head>
+  <body class="category-page">
+    <header class="page-header">
+      <nav class="navbar">
+        <a href="./index.html" class="nav-logo">Pixmart. </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link underline-effect">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./products.html" class="nav-link underline-effect"
+              >Products
+              <svg class="nav-arrow" width="16" height="16">
+                <use xlink:href="./sprites/sprites.svg#down-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./creators.html" class="nav-link new-nav-link">
+              Creators
+            </a>
+            <span class="nav-new-highlight">NEW</span>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link underline-effect">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link underline-effect"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="nav-account-options">
+          <form
+            action="#"
+            class="nav-search-container"
+            class="checkbox-container"
+            aria-label="Navigation Search"
+          >
+            <input
+              type="search"
+              name="navsearchbar"
+              id="navsearchbar"
+              class="nav-searchbar"
+              class="checkbox-container"
+              aria-label="Search through site content"
+              placeholder="Search for Digital Assets"
+            />
+            <button
+              type="submit"
+              class="checkbox-container"
+              aria-label="Submit search"
+              class="seachbar-btn"
+            >
+              <svg class="searchbar-icon">
+                <use xlink:href="./sprites/sprites.svg#searchbar-lens"></use>
+              </svg>
+            </button>
+          </form>
+          <a href="#" class="nav-account-link">
+            <svg class="cart-icon">
+              <use href="./sprites/sprites.svg#cart"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="page-banner">
+        <div class="banner-inner-container">
+          <h1 class="hidden-heading">Pixmart Collection Page</h1>
+          <h2 class="banner-heading">
+            Explore Top
+            <span class="new-row">
+              <span class="text-highlight">UI Kits</span> Design Assets
+            </span>
+          </h2>
+        </div>
+      </section>
+      <section class="category-container">
+        <div class="inner-category-container">
+          <aside class="category-filter-container">
+            <form action="#">
+              <div class="filter-list-wrap">
+                <h2 class="filter-heading">Categories</h2>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="category-all"
+                        checked
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">All Categories</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="category-tech"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Technology</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="category-travel"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Travel & Tourism</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="category-health"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Health & Fitness</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="category-ecommerce"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">E-Commerce</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="category-education"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Education</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="category-entertainment"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Entertainment</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="category-other"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Others</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-spacer"></div>
+
+              <div class="filter-list-wrap">
+                <h2 class="filter-heading">Format Type</h2>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="format-all"
+                        checked
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">All Formats</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="format-figma"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Figma</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="format-sketch"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Sketch</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="format-adobe-xd"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Adobe XD</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="format-photoshop"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Adobe Photoshop</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="format-illustrator"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Adobe Illustration</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="format-other"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Others</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-spacer"></div>
+
+              <div class="filter-list-wrap">
+                <h2 class="filter-heading">Styles</h2>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="style-all"
+                        checked
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">All Styles</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="style-minimalistic"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Minimalistic</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="style-modern"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Modern</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="style-playful"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Playful</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="style-dark-mode"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Dark Mode</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="style-photocentric"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Photocentric</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        id="style-other"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <span class="label-text">Others</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter-spacer"></div>
+              <div class="price-container">
+                <h2 class="filter-heading">Price</h2>
+                <div class="price-range-container">
+                  <div class="price-range-wrap">
+                    <input
+                      type="range"
+                      id="min-price-slider"
+                      name="min-price"
+                      class="price-slider"
+                      min="0"
+                      max="75"
+                      step="1"
+                      value="5"
+                      aria-label="Minimum price slider"
+                    />
+                    <input
+                      type="range"
+                      id="max-price-slider"
+                      name="max-price"
+                      class="price-slider"
+                      min="0"
+                      max="75"
+                      step="1"
+                      value="50"
+                      aria-label="Maximum price slider"
+                    />
+                    <div class="slider-track"></div>
+                  </div>
+                  <div class="price-text-container">
+                    <p
+                      class="min-price slider-price-text"
+                      aria-label="Minimum price"
+                    >
+                      $5
+                    </p>
+                    <p
+                      class="max-price slider-price-text"
+                      aria-label="Maximum price"
+                    >
+                      $50
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="clear-filters-container">
+                <button type="reset" class="clear-filters-btn underline-effect">
+                  Clear all filters
+                </button>
+              </div>
+            </form>
+          </aside>
+          <div class="categories-container">
+            <div class="categories-applied-filters">
+              <div class="applied-filters-left">
+                <div class="active-category-filter">
+                  <button class="category-btn">
+                    UI Kit
+                    <svg class="close-icon">
+                      <use xlink:href="./sprites/sprites.svg#x"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="sort-container">
+                  <label for="dropdown" class="sort-text">Sort By:</label>
+                  <div class="dropdown-wrapper">
+                    <select
+                      id="dropdown"
+                      name="sort-options"
+                      class="sort-select"
+                    >
+                      <option value="best-seller" class="sort-option">
+                        Best Seller
+                      </option>
+                      <option value="filter-2" class="sort-option">
+                        Filter 2
+                      </option>
+                    </select>
+                    <svg class="dropdown-arrow" width="16" height="16">
+                      <use xlink:href="./sprites/sprites.svg#down-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="applied-filters-right">
+                <p class="results-text">Showing 12 out of 120 results.</p>
+                <div class="categories-list-style">
+                  <button class="list-style-grid">
+                    <svg class="grid-icon">
+                      <use xlink:href="./sprites/sprites.svg#grid-style"></use>
+                    </svg>
+                  </button>
+                  <button class="list-style-list">
+                    <svg class="list-icon">
+                      <use xlink:href="./sprites/sprites.svg#list-style"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="categories-list">
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-1.webp"
+                  alt="Ezmart Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >Ezmart</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$11.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add Ezmart to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-2.webp"
+                  alt="SchoolHub Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >SchoolHub</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$6.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add SchoolHub to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-3.webp"
+                  alt="Kidztar Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >Kidztar</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$20.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add Kidztar to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-4.webp"
+                  alt="PlayCut Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >PlayCut</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$20.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add PlayCut to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-5.webp"
+                  alt="WithCash Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >WithCash</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$12.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add WithCash to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-6.webp"
+                  alt="Journeey Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >Journeey</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$5.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add Journeey to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-7.webp"
+                  alt="Foodish Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >Foodish</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$6.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add Foodish to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-8.webp"
+                  alt="MediCare Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >MediCare</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$18.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add MediCare to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-9.webp"
+                  alt="UpNews Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >UpNews</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$12.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add UpNews to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-10.webp"
+                  alt="James Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >James</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$12.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add James to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-11.webp"
+                  alt="JobBlitz Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >JobBlitz</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$5.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add JobBlitz to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="categories-product">
+                <img
+                  src="./imgs/category-12.webp"
+                  alt="SkyHomes Figma Template"
+                  class="categories-img"
+                />
+                <div class="categories-details">
+                  <div class="categories-details-text">
+                    <a
+                      href="#"
+                      class="categories-product-heading underline-effect"
+                      >SkyHomes</a
+                    >
+                    <p class="categories-description">Figma Template</p>
+                  </div>
+                  <div class="categories-product-footer">
+                    <p class="categories-price">$20.00</p>
+                    <button
+                      class="add-product-btn"
+                      aria-label="Add SkyHomes to cart"
+                    >
+                      <svg class="cart-icon">
+                        <use href="./sprites/sprites.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="pagination">
+              <a
+                href="?page=1"
+                class="pagination-button"
+                aria-label="Previous Page"
+              >
+                <svg class="pagination-back" width="24" height="24">
+                  <use xlink:href="./sprites/sprites.svg#arrow-left"></use>
+                </svg>
+              </a>
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a href="?page=1" class="pagination-link">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="?page=2" class="pagination-link">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="?page=2" class="pagination-link">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="?page=3" class="pagination-link">10</a>
+                </li>
+              </ul>
+              <a
+                href="?page=4"
+                class="pagination-button"
+                aria-label="Next Page"
+              >
+                <svg class="pagination-forward" width="24" height="24">
+                  <use xlink:href="./sprites/sprites.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-cta-container">
+        <div class="cta-text-container">
+          <div class="cta-header">
+            <p class="cta-text">PRODUCT</p>
+            <h2 class="cta-heading">
+              Elevate Your Project
+              <span class="new-row"> with Premium Digital Assets </span>
+            </h2>
+          </div>
+          <a href="#" class="cta-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="footer-nav-container">
+        <div class="footer-header">
+          <a href="./index.html" class="footer-heading-link">
+            <img src="./imgs/footer-logo.webp" alt="#" />
+          </a>
+          <p class="footer-text">
+            Your premium digital assets solution with high quality and
+            comprehensive range of products and services.
+          </p>
+        </div>
+        <nav class="footer-nav">
+          <div class="company-nav-container">
+            <h3 class="nav-footer-heading">Company</h3>
+            <ul class="nav-footer-list">
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Homepage v1</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Homepage v2</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Homepage v3</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Creators</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Blog Articles</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="products-nav-container">
+            <h3 class="nav-footer-heading">Products</h3>
+            <ul class="nav-footer-list">
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect">Website</a>
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Mobile App</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Social Media Feeds</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Presentation</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Product Mockups</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Illustrations</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="account-nav-container">
+            <h3 class="nav-footer-heading">Account</h3>
+            <ul class="nav-footer-list">
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Your Cart</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Check Out</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Refund Policy</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Company Policy</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Send A Message</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Customer Support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-info">
+        <div class="newsletter-container">
+          <p class="newsletter-heading">Subscribe to Newsletter</p>
+          <form action="#" class="footer-form">
+            <input
+              type="text"
+              placeholder="Enter your email address ..."
+              class="footer-subscribe-input"
+              required
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              class="footer-subscribe-btn"
+            />
+          </form>
+        </div>
+        <div class="follow-social-container">
+          <h3 class="follow-social-heading">Follow Us</h3>
+          <ul class="follow-social-list">
+            <li class="follow-social-item social-item">
+              <a href="https://x.com/" target="_blank" class="social-link">
+                TW
+              </a>
+            </li>
+            <li class="follow-social-item social-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-link"
+              >
+                IG
+              </a>
+            </li>
+            <li class="follow-social-item social-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social-link"
+              >
+                FB
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-end">
+        <ul class="footer-end-list">
+          <li class="footer-end-item">
+            <a href="#" class="privacy-link footer-end-link underline-effect"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="footer-end-item">
+            <a href="#" class="terms-link footer-end-link underline-effect"
+              >Terms and Condition</a
+            >
+          </li>
+          <li class="footer-end-item">
+            <a href="#" class="site-map-link footer-end-link underline-effect"
+              >Site Map</a
+            >
+          </li>
+        </ul>
+        <p class="footer-end-copy">
+          Copyright &copy; 2024 Pixmart. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
