@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./imgs/favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Contact</title>
+  </head>
+  <body class="contact-page">
+    <header class="page-header">
+      <div class="header-container">
+        <nav class="navbar">
+          <a href="./index.html" class="nav-logo"> Pixmart. </a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link underline-effect">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./products.html" class="nav-link underline-effect"
+                >Products
+                <svg class="nav-arrow" width="16" height="16">
+                  <use xlink:href="./sprites/sprites.svg#down-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./creators.html" class="nav-link new-nav-link">
+                Creators
+              </a>
+              <span class="nav-new-highlight">NEW</span>
+            </li>
+            <li class="nav-item">
+              <a href="./blog.html" class="nav-link underline-effect">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link underline-effect"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="nav-account-options">
+            <a href="#" class="nav-account-link">
+              <svg class="profile-icon">
+                <use href="./sprites/sprites.svg#profile"></use>
+              </svg>
+            </a>
+            <a href="#" class="nav-account-link">
+              <svg class="cart-icon">
+                <use href="./sprites/sprites.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="contact-container">
+        <div class="contact-info-container">
+          <div class="contact-text-wrap">
+            <div class="contact-info-head">
+              <div class="contact-info-header">
+                <p class="contact-info-text">CONTACT</p>
+                <h2 class="contact-info-heading">
+                  Get in Touch <span class="new-row">with Us</span>
+                </h2>
+              </div>
+              <p class="contact-info-subheading">
+                We are here to help you navigate your creative journey. Reach
+                out for any questions, support, or feedback.
+              </p>
+            </div>
+            <div class="contact-info-details">
+              <p class="contact-details">
+                <svg class="contact-details-icon" width="24" height="24">
+                  <use xlink:href="./sprites/sprites.svg#phone"></use>
+                </svg>
+                +1 (555) 123-4567
+              </p>
+              <p class="contact-details">
+                <svg class="contact-details-icon" width="24" height="24">
+                  <use xlink:href="./sprites/sprites.svg#mail"></use>
+                </svg>
+                support@pixmart.com
+              </p>
+              <p class="contact-details">
+                <svg class="contact-details-icon" width="24" height="24">
+                  <use xlink:href="./sprites/sprites.svg#clock"></use>
+                </svg>
+                Monday to Friday : 9 AM - 5 PM EST
+              </p>
+            </div>
+          </div>
+          <figure class="contact-map">
+            <img src="./imgs" alt="(Map) Location of Pixmart HQ" />
+            <div class="location-details">
+              <svg class="pin-icon" width="24" height="24">
+                <use xlink:href="./sprites/sprites.svg#pin"></use>
+              </svg>
+              <div class="location-text">
+                <p class="location-heading">PixMart HQ</p>
+                <p class="location-address">
+                  123 Creative Ave, Design City, 45678
+                </p>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <form
+          action="#"
+          method="post"
+          class="contact-form"
+          aria-label="Contact Form"
+        >
+          <div class="main-contact-form">
+            <!-- Full Name Field -->
+            <div class="form-group">
+              <label for="full-name" class="contact-label">Full Name</label>
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                class="contact-input"
+                placeholder="Amelia Robert Johnson"
+                aria-label="Full Name"
+                required
+              />
+            </div>
+
+            <!-- Email Address Field -->
+            <div class="form-group">
+              <label for="email" class="contact-label">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contact-input"
+                placeholder="amelia.robertjohnson@pixmart.com"
+                aria-label="Email Address"
+                required
+              />
+            </div>
+
+            <!-- Subject Dropdown -->
+            <div class="form-group">
+              <label for="subject" class="contact-label">Subject</label>
+              <select
+                id="subject"
+                name="subject"
+                class="contact-select"
+                aria-label="Select Subject"
+                required
+              >
+                <option value="" disabled selected>Select Subject</option>
+                <option value="general-inquiry">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="form-group">
+              <label for="message" class="contact-label">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="contact-textarea"
+                placeholder="Enter your message ..."
+                aria-label="Message"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="contact-form-footer">
+            <!-- Additional Options -->
+            <div class="contact-extras">
+              <!-- Subscribe to Newsletter -->
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="subscribe-newsletter"
+                  name="subscribe-newsletter"
+                  class="contact-checkbox"
+                  aria-label="Subscribe me to Newsletter"
+                />
+                <label
+                  for="subscribe-newsletter"
+                  class="contact-checkbox-label"
+                >
+                  <span class="contact-custom-checkbox"></span>
+                  Subscribe me to Newsletter
+                </label>
+              </div>
+              <!-- Privacy Policy -->
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="privacy-policy"
+                  name="privacy-policy"
+                  class="contact-checkbox"
+                  aria-label="I have read the User & Privacy Policy"
+                  checked
+                />
+                <label for="privacy-policy" class="contact-checkbox-label">
+                  <span class="contact-custom-checkbox"></span>
+                  <span class="privacy-policy-label">I have read the <a href="#" class="contact-policy-link">User & Privacy Policy</a></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="contact-submit-btn">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="explore-container">
+        <div class="explore-left">
+          <h2 class="explore-heading">Bring Your Creativity Alive</h2>
+          <p class="explore-text">
+            Explore our new exclusive digital design assets and graphic
+            collections today!
+          </p>
+          <a href="#" class="explore-shop-btn">Shop Now</a>
+        </div>
+        <div class="explore-right">
+          <img
+            src="./imgs/footer-explore-1.webp"
+            alt="textIcon"
+            class="explore-text-img"
+            width="274"
+            height="151"
+          />
+          <img
+            src="./imgs/footer-explore-2.webp"
+            alt="#"
+            class="explore-photo"
+          />
+        </div>
+      </div>
+      <div class="footer-nav-container">
+        <div class="footer-header">
+          <a href="./index.html" class="footer-heading-link">
+            <img src="./imgs/footer-logo-2.webp" alt="#" />
+          </a>
+          <p class="footer-text">
+            Your premium digital assets solution with high quality and
+            comprehensive range of products and services.
+          </p>
+        </div>
+        <nav class="footer-nav">
+          <div class="company-nav-container">
+            <h3 class="nav-footer-heading">Company</h3>
+            <ul class="nav-footer-list">
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Homepage v1</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Homepage v2</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Homepage v3</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Creators</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Blog Articles</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="products-nav-container">
+            <h3 class="nav-footer-heading">Products</h3>
+            <ul class="nav-footer-list">
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect">Website</a>
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Mobile App</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Social Media Feeds</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Presentation</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Product Mockups</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Illustrations</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="account-nav-container">
+            <h3 class="nav-footer-heading">Account</h3>
+            <ul class="nav-footer-list">
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Your Cart</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Check Out</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Refund Policy</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Company Policy</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Send A Message</a
+                >
+              </li>
+              <li class="nav-footer-item">
+                <a href="#" class="footer-nav-link underline-effect"
+                  >Customer Support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-info">
+        <div class="newsletter-container">
+          <p class="newsletter-heading">Subscribe to Newsletter</p>
+          <form action="#" class="footer-form">
+            <input
+              type="text"
+              placeholder="Enter your email address ..."
+              class="footer-subscribe-input"
+              required
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              class="footer-subscribe-btn"
+            />
+          </form>
+        </div>
+        <div class="follow-social-container">
+          <h3 class="follow-social-heading">Follow Us</h3>
+          <ul class="follow-social-list">
+            <li class="follow-social-item social-item">
+              <a href="https://x.com/" target="_blank" class="social-link">
+                TW
+              </a>
+            </li>
+            <li class="follow-social-item social-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-link"
+              >
+                IG
+              </a>
+            </li>
+            <li class="follow-social-item social-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social-link"
+              >
+                FB
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+<div class="footer-end">
+        <div class="footer-inner-end">
+          <ul class="footer-end-list">
+            <li class="footer-end-item">
+              <a href="#" class="privacy-link footer-end-link underline-effect"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-end-item">
+              <a href="#" class="terms-link footer-end-link underline-effect"
+                >Terms and Condition</a
+              >
+            </li>
+            <li class="footer-end-item">
+              <a href="#" class="site-map-link footer-end-link underline-effect"
+                >Site Map</a
+              >
+            </li>
+          </ul>
+          <p class="footer-end-copy">
+            Copyright &copy; 2024 Pixmart. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
