@@ -2227,8 +2227,6 @@ input[type="number"]::-ms-expand {
 .category-page .footer-nav-container {
   padding-top: 100px;
 }
-.category-page .footer-text {
-}
 .category-page .footer-nav-container {
   display: flex;
   justify-content: space-between;
@@ -2261,10 +2259,6 @@ input[type="number"]::-ms-expand {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-.category-page .nav-footer-heading {
-}
-.category-page .newsletter-heading {
 }
 .footer-cta-container {
   background-image: url(../imgs/category-footer-back.webp);
