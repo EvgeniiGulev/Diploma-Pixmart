@@ -101,20 +101,28 @@
               </p>
             </div>
           </div>
-          <figure class="contact-map">
-            <img src="./imgs" alt="(Map) Location of Pixmart HQ" />
-            <div class="location-details">
-              <svg class="pin-icon" width="24" height="24">
-                <use xlink:href="./sprites/sprites.svg#pin"></use>
-              </svg>
-              <div class="location-text">
-                <p class="location-heading">PixMart HQ</p>
-                <p class="location-address">
-                  123 Creative Ave, Design City, 45678
-                </p>
-              </div>
+          <iframe
+            title="PixMart HQ Location"
+            src="https://www.google.com/maps/embed?pb=your-map-embed-link"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+          <div class="location-details">
+            <svg class="pin-icon" width="24" height="24">
+              <use xlink:href="./sprites/sprites.svg#pin"></use>
+            </svg>
+            <div class="location-text">
+              <p class="location-heading">PixMart HQ</p>
+              <p class="location-address">
+                123 Creative Ave, Design City, 45678
+              </p>
             </div>
-          </figure>
+          </div>
         </div>
         <form
           action="#"
@@ -214,13 +222,20 @@
                 />
                 <label for="privacy-policy" class="contact-checkbox-label">
                   <span class="contact-custom-checkbox"></span>
-                  <span class="privacy-policy-label">I have read the <a href="#" class="contact-policy-link">User & Privacy Policy</a></span>
+                  <span class="privacy-policy-label"
+                    >I have read the
+                    <a href="#" class="contact-policy-link"
+                      >User & Privacy Policy</a
+                    ></span
+                  >
                 </label>
               </div>
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="contact-submit-btn">Send Message</button>
+            <button type="submit" class="contact-submit-btn">
+              Send Message
+            </button>
           </div>
         </form>
       </section>
@@ -412,7 +427,7 @@
           </ul>
         </div>
       </div>
-<div class="footer-end">
+      <div class="footer-end">
         <div class="footer-inner-end">
           <ul class="footer-end-list">
             <li class="footer-end-item">
