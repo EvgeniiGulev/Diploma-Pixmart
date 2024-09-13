@@ -2426,7 +2426,7 @@ input[type="number"]::-ms-expand {
   border-radius: 10px;
   background-color: var(--text-white);
   align-items: center;
-  box-shadow: 0px 4px 40px 0px #1D395F14;
+  box-shadow: 0px 4px 40px 0px #1d395f14;
 }
 .location-text {
   display: flex;
@@ -2467,6 +2467,7 @@ input[type="number"]::-ms-expand {
 }
 .contact-input,
 .contact-select {
+  cursor: pointer;
   height: 64px;
   padding: 20px;
   border-radius: 10px;
