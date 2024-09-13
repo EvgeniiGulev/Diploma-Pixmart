@@ -75,14 +75,14 @@
                   alt="ProductImg"
                   class="active-product-image"
                 />
-                <button class="expand-img-btn">
+                <button type="button" class="expand-img-btn">
                   <svg class="expand-icon" width="32" height="32">
                     <use xlink:href="./sprites/sprites.svg#expand"></use>
                   </svg>
                 </button>
               </div>
               <div class="product-img-selector">
-                <button class="product-select-forward">
+                <button type="button" class="product-select-forward">
                   <svg class="cycle-product-imgs">
                     <use href="./sprites/sprites.svg#arrow-left"></use>
                   </svg>
@@ -117,7 +117,7 @@
                     />
                   </li>
                 </ul>
-                <button class="product-select-back">
+                <button type="button" class="product-select-back">
                   <svg class="cycle-product-imgs">
                     <use href="./sprites/sprites.svg#arrow-right"></use>
                   </svg>
@@ -157,7 +157,7 @@
                 </ul>
                 <p class="rating-num">(<span class="rating-count">50</span>)</p>
               </div>
-              <div class="product-header">
+              <header class="product-header">
                 <h1 class="product-heading">Vonix – Blue Yellow Modern</h1>
                 <div class="supplier-container">
                   <img
@@ -165,9 +165,9 @@
                     alt="SupplierLogo"
                     class="supplier-logo"
                   />
-                  <h2 class="supplier-name">Tech Pioneers</h2>
+                  <p class="supplier-name">Tech Pioneers</p>
                 </div>
-              </div>
+              </header>
               <p class="product-description">
                 The "Griya Real Estate Dashboard UI" is meticulously designed
                 for real estate entrepreneurs and startups looking to make a
@@ -390,7 +390,7 @@
       </section>
       <section class="related-container">
         <div class="related-inner-container">
-          <div class="related-header">
+          <header class="related-header">
             <h2 class="related-heading">Related Products</h2>
             <a href="#" class="related-link underline-effect"
               >Explore All Works
@@ -398,7 +398,7 @@
                 <use xlink:href="./sprites/sprites.svg#right-arrow"></use>
               </svg>
             </a>
-          </div>
+          </header>
           <div class="article-list">
             <article class="related-product">
               <img
@@ -415,7 +415,7 @@
                 </div>
                 <div class="related-product-footer">
                   <p class="related-price">$11.00</p>
-                  <button class="add-product-btn">
+                  <button type="button" class="add-product-btn">
                     <svg class="cart-icon">
                       <use href="./sprites/sprites.svg#cart"></use>
                     </svg>
@@ -438,7 +438,7 @@
                 </div>
                 <div class="related-product-footer">
                   <p class="related-price">$20.00</p>
-                  <button class="add-product-btn">
+                  <button type="button" class="add-product-btn">
                     <svg class="cart-icon">
                       <use href="./sprites/sprites.svg#cart"></use>
                     </svg>
@@ -461,7 +461,7 @@
                 </div>
                 <div class="related-product-footer">
                   <p class="related-price">$5.00</p>
-                  <button class="add-product-btn">
+                  <button type="button" class="add-product-btn">
                     <svg class="cart-icon">
                       <use href="./sprites/sprites.svg#cart"></use>
                     </svg>
@@ -484,7 +484,7 @@
                 </div>
                 <div class="related-product-footer">
                   <p class="related-price">$18.00</p>
-                  <button class="add-product-btn">
+                  <button type="button" class="add-product-btn">
                     <svg class="cart-icon">
                       <use href="./sprites/sprites.svg#cart"></use>
                     </svg>
@@ -522,15 +522,15 @@
         </div>
       </div>
       <div class="footer-nav-container">
-        <div class="footer-header">
+        <header class="footer-header">
           <a href="./index.html" class="footer-heading-link">
-            <img src="./imgs/footer-logo-2.webp" alt="#" />
+            <img src="./imgs/footer-logo-2.svg" alt="#" />
           </a>
           <p class="footer-text">
             Your premium digital assets solution with high quality and
             comprehensive range of products and services.
           </p>
-        </div>
+        </header>
         <nav class="footer-nav">
           <div class="company-nav-container">
             <h3 class="nav-footer-heading">Company</h3>
@@ -642,16 +642,14 @@
           <p class="newsletter-heading">Subscribe to Newsletter</p>
           <form action="#" class="footer-form">
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email address ..."
               class="footer-subscribe-input"
               required
             />
-            <input
-              type="submit"
-              value="Subscribe"
-              class="footer-subscribe-btn"
-            />
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+            </button>
           </form>
         </div>
         <div class="follow-social-container">

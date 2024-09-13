@@ -1,16 +1,16 @@
 :root {
-  --text-white: #ffffff;
-  --text-black: #222222;
+  --text-white: #fff;
+  --text-black: #222;
   --text-blue: #0f73f6;
   --text-light-blue: #f0f6fd;
   --back-gray: #b0b0b0;
   --back-lightgray: #d9d9d9;
   --primary-darkblue: #1166d4;
-  --footer-gradient: linear-gradient(360deg, #ffffff 0%, #f0f6fd 100%);
-  --gradient-gray: linear-gradient(to bottom, #f0f6fd 0%, #ffffff 100%);
-  --gradient-default: linear-gradient(90deg, #f0f6fd 44%, #ffffff 100%);
-  --gradient-blue: linear-gradient(0.23deg, #ffffff 0.2%, #f0f6fd 99.8%),
-    linear-gradient(360deg, #afccef 0%, rgba(255, 255, 255, 0) 100%);
+  --footer-gradient: linear-gradient(360deg, #fff 0, #f0f6fd 100%);
+  --gradient-gray: linear-gradient(to bottom, #f0f6fd 0, #fff 100%);
+  --gradient-default: linear-gradient(90deg, #f0f6fd 44%, #fff 100%);
+  --gradient-blue: linear-gradient(0.23deg, #fff 0.2%, #f0f6fd 99.8%),
+    linear-gradient(360deg, #afccef 0, rgba(255, 255, 255, 0) 100%);
   --transparent-black-15: #22222226;
   --transparent-white-25: #ffffff40;
   --sys-error: #ea4335;
@@ -65,7 +65,7 @@ body {
   color: var(--text-blue);
   margin-left: auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   font-family: "Libre Franklin", Arial, sans-serif;
 }
 .spotlight-tags,
@@ -212,19 +212,19 @@ body {
   margin-top: 32px;
 }
 .main-search-input {
-  width: 436px;
-  height: 72px;
+  width: 400px;
+  height: 64px;
   padding: 24px 32px 24px 32px;
   border-radius: 10px;
-  border: 0px;
+  border: 0;
 }
 .main-search-btn {
-  width: 184px;
-  height: 72px;
+  width: 138px;
+  height: 64px;
   border-radius: 10px;
   background-color: var(--text-blue);
   color: var(--text-white);
-  border: 0px;
+  border: 0;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
@@ -260,7 +260,7 @@ body {
   position: absolute;
   right: -125px;
   bottom: 275px;
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+  box-shadow: 0 4px 40px 0 #1d395f14;
 }
 .second-illustration {
   position: absolute;
@@ -294,7 +294,7 @@ body {
 }
 .product-list {
   display: flex;
-  padding: 80px 0px;
+  padding: 80px 0;
   justify-content: space-between;
 }
 .product-item {
@@ -349,7 +349,7 @@ body {
   gap: 20px;
   border-radius: 20px;
   background-color: var(--text-white);
-  box-shadow: 0px 4px 40px 0px #1d395f05;
+  box-shadow: 0 4px 40px 0 #1d395f05;
 }
 .spotlight-img {
   width: 373px;
@@ -374,7 +374,7 @@ body {
 .spotlight-price {
   width: 88px;
   height: 40px;
-  padding: 0px 16px 0px 16px;
+  padding: 0 16px 0 16px;
   border-radius: 100px;
   background-color: var(--text-blue);
   display: flex;
@@ -387,7 +387,7 @@ body {
   font-family: "Libre Franklin", Arial, sans-serif;
 }
 .trending-container {
-  padding: 80px 0px;
+  padding: 80px 0;
 }
 .trending-header {
   width: 840px;
@@ -422,14 +422,13 @@ body {
   border-radius: 20px;
   background-color: var(--back-lightgray);
 }
-.trending-badge {
+.trending-product-illustration::after {
+  content: url("../imgs/badge.svg");
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--text-blue);
   border-radius: 0 20px;
-  width: 56px;
-  height: 56px;
+  background-color: var(--text-blue);
   padding: 16px;
 }
 .trending-product-details {
@@ -522,7 +521,7 @@ body {
   padding: 16px;
   gap: 12px;
   border-radius: 20px;
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+  box-shadow: 0 4px 40px 0 #1d395f14;
   background-color: var(--text-white);
   display: flex;
   flex-direction: column;
@@ -545,7 +544,7 @@ body {
   height: 64px;
   border-radius: 50%;
   background-color: var(--text-blue);
-  border: 0px;
+  border: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -672,24 +671,38 @@ body {
   border-radius: 10px;
   justify-content: space-between;
   background-color: var(--text-white);
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+  box-shadow: 0 4px 40px 0 #1d395f14;
 }
 .faq[open] {
-  border: 2px solid #0f73f6;
+  border: 2px solid var(--text-blue);
 }
 .faq-summary {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
-  background-image: url("../imgs/up-arrow.svg");
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: right;
   list-style-type: none;
   cursor: pointer;
+  position: relative;
 }
-.faq[open] .faq-summary {
-  background-image: url("../imgs/down-arrow.svg");
+.faq-summary::after {
+  content: "";
+  background-image: url("../imgs/up-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+.faq[open] .faq-summary::after {
+  transform: translateY(-50%) rotate(180deg);
 }
 .faq-text {
   font-size: 16px;
@@ -796,7 +809,7 @@ body {
   border-radius: 50%;
   border: 0;
   background-color: var(--text-white);
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+  box-shadow: 0 4px 40px 0 #1d395f14;
   color: var(--text-blue);
 }
 .blog-cycle-forward:hover,
@@ -872,7 +885,7 @@ body {
   background-color: var(--text-black);
 }
 .footer-inner-end {
-  padding: 24px 80px 24px 80px;
+  padding: 24px 0;
   display: flex;
   justify-content: space-between;
   max-width: 1280px;
@@ -933,7 +946,7 @@ body {
   padding: 24px;
   border-radius: 10px;
   border: 0;
-  box-shadow: 0px 4px 30px 0px #1d395f0d;
+  box-shadow: 0 4px 30px 0 #1d395f0d;
 }
 .footer-subscribe-input::placeholder {
   font-size: 16px;
@@ -1008,7 +1021,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 100px;
-  box-shadow: 0px 4px 30px 0px #1d395f0d;
+  box-shadow: 0 4px 30px 0 #1d395f0d;
   background-color: var(--text-white);
   transition: background-color 0.3s ease;
 }
@@ -1056,7 +1069,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 0px;
+  padding: 80px 0;
   gap: 48px;
 }
 .second-illustration-img {
@@ -1154,7 +1167,7 @@ body {
 .product-inner-container {
   max-width: 1280px;
   width: 100%;
-  padding: 80px 0px;
+  padding: 80px 0;
   display: flex;
 }
 .product-left {
@@ -1181,7 +1194,7 @@ body {
   right: 12px;
   color: var(--text-blue);
   border: 0;
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+  box-shadow: 0 4px 40px 0 #1d395f14;
 }
 .product-img-selector {
   display: flex;
@@ -1300,7 +1313,7 @@ body {
   margin-right: 8px;
   position: relative;
   cursor: pointer;
-  border: 1px solid #222222;
+  border: 1px solid #222;
 }
 .custom-checkbox::before {
   content: "";
@@ -1351,10 +1364,10 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.33;
-  outline: none;
+  outline: 0;
 }
 .quantity-input:focus {
-  outline: none;
+  outline: 0;
 }
 input[type="number"] {
   appearance: textfield;
@@ -1384,7 +1397,7 @@ input[type="number"]::-ms-expand {
   padding: 20px 46px 20px 46px;
   border-radius: 10px;
   background-color: var(--text-light-blue);
-  border: 0px;
+  border: 0;
   color: var(--text-blue);
   font-size: 16px;
   font-weight: 700;
@@ -1448,7 +1461,7 @@ input[type="number"]::-ms-expand {
   line-height: 1.5;
 }
 .product-details-list {
-  padding: 0px 0px 0px 16px;
+  padding: 0 0 0 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -1557,12 +1570,24 @@ input[type="number"]::-ms-expand {
   padding: 6px 24px 6px 24px;
   border-radius: 100px;
   border: 1px solid var(--text-blue);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.product-tag {
+  color: var(--text-black);
+  transition: color 0.3s ease;
+}
+.product-tag-item:hover .product-tag {
+  color: var(--text-white);
+}
+.product-tag-item:hover {
+  background-color: var(--text-blue);
 }
 .related-inner-container {
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
-  padding: 80px 0px;
+  padding: 80px 0;
   gap: 48px;
   display: flex;
   flex-direction: column;
@@ -1622,7 +1647,7 @@ input[type="number"]::-ms-expand {
   width: 80px;
   height: 40px;
   border-radius: 100px;
-  border: 0px;
+  border: 0;
   background-color: var(--text-light-blue);
   transition: background-color 0.3s ease-out;
 }
@@ -1637,7 +1662,7 @@ input[type="number"]::-ms-expand {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(0%);
+  transform: translateX(-50%) translateY(0);
   margin-top: -204px;
 }
 .explore-heading {
@@ -1662,7 +1687,7 @@ input[type="number"]::-ms-expand {
   bottom: 5%;
   left: -16%;
   border-radius: 10px;
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+  box-shadow: 0 4px 40px 0 #1d395f14;
   z-index: 1;
   object-fit: cover;
 }
@@ -1837,12 +1862,12 @@ input[type="number"]::-ms-expand {
   justify-content: space-between;
 }
 .nav-searchbar:focus {
-  outline: 0px;
+  outline: 0;
 }
 .seachbar-btn {
   align-self: center;
   background-color: var(--text-white);
-  border: 0px;
+  border: 0;
   position: absolute;
   right: 20px;
   cursor: pointer;
@@ -1874,7 +1899,7 @@ input[type="number"]::-ms-expand {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  padding: 80px 0px;
+  padding: 80px 0;
   justify-content: space-between;
 }
 .categories-list {
@@ -1941,11 +1966,12 @@ input[type="number"]::-ms-expand {
   padding: 0;
   margin: 0;
 }
-.filter-spacer {
+.filter-list::after {
+  content: "";
   width: 100%;
   height: 1px;
   background-color: var(--transparent-black-15);
-  margin: 40px 0;
+  margin: 40px 0 0 0;
 }
 .filter-item .checkbox-container {
   display: flex;
@@ -1986,7 +2012,7 @@ input[type="number"]::-ms-expand {
 .category-btn {
   width: 199px;
   height: 48px;
-  padding: 0px 20px 0px 24px;
+  padding: 0 20px 0 24px;
   gap: 80px;
   border-radius: 100px;
   border: 100px;
@@ -1996,7 +2022,7 @@ input[type="number"]::-ms-expand {
   display: flex;
   align-items: center;
   position: relative;
-  border: 1px solid #0f73f6;
+  border: 1px solid var(--text-blue);
   color: var(--text-blue);
   background-color: var(--text-white);
   transition: background-color 0.5s ease;
@@ -2280,7 +2306,7 @@ input[type="number"]::-ms-expand {
   flex-direction: column;
   gap: 32px;
   align-items: center;
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+  box-shadow: 0 4px 40px 0 #1d395f14;
 }
 .cta-text {
   font-size: 16px;
@@ -2429,7 +2455,7 @@ input[type="number"]::-ms-expand {
   background-color: var(--text-white);
   max-width: 630px;
   width: 100%;
-  box-shadow: 0px 4px 40px 0px #1d395f14;
+  box-shadow: 0 4px 40px 0 #1d395f14;
   max-height: 756px;
 }
 .form-group {

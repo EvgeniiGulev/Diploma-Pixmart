@@ -69,12 +69,12 @@
         <div class="contact-info-container">
           <div class="contact-text-wrap">
             <div class="contact-info-head">
-              <div class="contact-info-header">
+              <header class="contact-info-header">
                 <p class="contact-info-text">CONTACT</p>
                 <h2 class="contact-info-heading">
                   Get in Touch <span class="new-row">with Us</span>
                 </h2>
-              </div>
+              </header>
               <p class="contact-info-subheading">
                 We are here to help you navigate your creative journey. Reach
                 out for any questions, support, or feedback.
@@ -85,13 +85,13 @@
                 <svg class="contact-details-icon" width="24" height="24">
                   <use xlink:href="./sprites/sprites.svg#phone"></use>
                 </svg>
-                +1 (555) 123-4567
+                Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a>
               </p>
               <p class="contact-details">
                 <svg class="contact-details-icon" width="24" height="24">
                   <use xlink:href="./sprites/sprites.svg#mail"></use>
                 </svg>
-                support@pixmart.com
+                <a href="mailto:support@pixmart.com">support@pixmart.com</a>
               </p>
               <p class="contact-details">
                 <svg class="contact-details-icon" width="24" height="24">
@@ -266,15 +266,15 @@
         </div>
       </div>
       <div class="footer-nav-container">
-        <div class="footer-header">
+        <header class="footer-header">
           <a href="./index.html" class="footer-heading-link">
-            <img src="./imgs/footer-logo-2.webp" alt="#" />
+            <img src="./imgs/footer-logo-2.svg" alt="#" />
           </a>
           <p class="footer-text">
             Your premium digital assets solution with high quality and
             comprehensive range of products and services.
           </p>
-        </div>
+        </header>
         <nav class="footer-nav">
           <div class="company-nav-container">
             <h3 class="nav-footer-heading">Company</h3>
@@ -386,16 +386,14 @@
           <p class="newsletter-heading">Subscribe to Newsletter</p>
           <form action="#" class="footer-form">
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email address ..."
               class="footer-subscribe-input"
               required
             />
-            <input
-              type="submit"
-              value="Subscribe"
-              class="footer-subscribe-btn"
-            />
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+            </button>
           </form>
         </div>
         <div class="follow-social-container">

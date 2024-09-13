@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pixmart empowers creators with premium digital assets including fonts, templates, illustrations, and more. Discover tools to unleash your creativity and bring your ideas to life with our vast collection of design resources."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -66,7 +70,10 @@
     </header>
     <main class="main-container">
       <section class="hero-container">
-        <h1 class="hidden-heading">Homepage Hidden Heading</h1>
+        <h1 class="hidden-heading">
+          Pixmart: Empowering Creators with Premium Digital Assets and Creative
+          Tools
+        </h1>
         <h2 class="main-heading">
           Unleash Your Creativity
           <span class="new-row">
@@ -85,7 +92,7 @@
             class="main-search-input"
             required
           />
-          <input type="submit" value="Search Now" class="main-search-btn" />
+          <button type="submit" class="main-search-btn">Subscribe</button>
         </form>
         <figure class="main-illustration-container">
           <img
@@ -94,7 +101,7 @@
             class="main-illustration"
           />
           <div class="icon-container ruler-container">
-            <img src="./imgs/ruler.webp" alt="RulerIcon" class="ruler-icon" />
+            <img src="./imgs/ruler.svg" alt="RulerIcon" class="ruler-icon" />
           </div>
           <div class="second-illustration">
             <img
@@ -111,7 +118,7 @@
             />
           </div>
           <div class="icon-container font-container">
-            <img src="./imgs/font.webp" alt="FontIcon" class="font-icon" />
+            <img src="./imgs/font.svg" alt="FontIcon" class="font-icon" />
           </div>
           <div class="fourth-illustration">
             <img
@@ -175,7 +182,7 @@
       </section>
       <section class="spotlight-container">
         <div class="spotlight-inner-container">
-          <div class="spotlight-header">
+          <header class="spotlight-header">
             <h2 class="spotlight-heading">
               Spotlight Digital Assets Selections
             </h2>
@@ -185,10 +192,9 @@
                 <use xlink:href="./sprites/sprites.svg#right-arrow"></use>
               </svg>
             </a>
-          </div>
+          </header>
           <div class="spotlight-product-container">
             <article class="spotlight-product">
-              <h2 class="hidden-heading">Digital Assets</h2>
               <img
                 src="./imgs/spotlight-1.webp"
                 alt="SpotlightProduct"
@@ -196,9 +202,11 @@
               />
               <div class="spotlight-product-details">
                 <div class="product-details">
-                  <a href="#" class="spotlight-product-title underline-effect"
-                    >Flexsoul</a
-                  >
+                  <h2>
+                    <a href="#" class="spotlight-product-title underline-effect"
+                      >Flexsoul</a
+                    >
+                  </h2>
                   <p class="spotlight-price">$12.00</p>
                 </div>
                 <ul class="spotlight-tags">
@@ -212,7 +220,6 @@
               </div>
             </article>
             <article class="spotlight-product">
-              <h2 class="hidden-heading">Digital Assets</h2>
               <img
                 src="./imgs/spotlight-2.webp"
                 alt="SpotlightProduct"
@@ -220,9 +227,11 @@
               />
               <div class="spotlight-product-details">
                 <div class="product-details">
-                  <a href="#" class="spotlight-product-title underline-effect"
-                    >Avery</a
-                  >
+                  <h2>
+                    <a href="#" class="spotlight-product-title underline-effect"
+                      >Avery</a
+                    >
+                  </h2>
                   <p class="spotlight-price">$6.00</p>
                 </div>
                 <ul class="spotlight-tags">
@@ -236,7 +245,6 @@
               </div>
             </article>
             <article class="spotlight-product">
-              <h2 class="hidden-heading">Digital Assets</h2>
               <img
                 src="./imgs/spotlight-3.webp"
                 alt="SpotlightProduct"
@@ -244,9 +252,11 @@
               />
               <div class="spotlight-product-details">
                 <div class="product-details">
-                  <a href="#" class="spotlight-product-title underline-effect"
-                    >Studio</a
-                  >
+                  <h2>
+                    <a href="#" class="spotlight-product-title underline-effect"
+                      >Studio</a
+                    >
+                  </h2>
                   <p class="spotlight-price">$8.00</p>
                 </div>
                 <ul class="spotlight-tags">
@@ -265,7 +275,7 @@
       <section class="trending-container">
         <div class="trending-inner-container">
           <div class="trending-left-container">
-            <div class="trending-header">
+            <header class="trending-header">
               <h2 class="trending-heading">Trending Products</h2>
               <a href="#" class="explore-trending underline-effect"
                 >Explore Trending Works
@@ -273,7 +283,7 @@
                   <use xlink:href="./sprites/sprites.svg#right-arrow"></use>
                 </svg>
               </a>
-            </div>
+            </header>
             <div class="trending-products-container">
               <div class="trending-product">
                 <div class="trending-product-illustration">
@@ -282,11 +292,7 @@
                     alt="TrendingProduct"
                     class="trending-img"
                   />
-                  <img
-                    src="./imgs/badge.webp"
-                    alt="TrendingBadge"
-                    class="trending-badge"
-                  />
+
                 </div>
                 <div class="trending-product-details">
                   <div class="product-details">
@@ -312,11 +318,7 @@
                     alt="TrendingProduct"
                     class="trending-img"
                   />
-                  <img
-                    src="./imgs/badge.webp"
-                    alt="TrendingBadge"
-                    class="trending-badge"
-                  />
+
                 </div>
                 <div class="trending-product-details">
                   <div class="product-details">
@@ -341,11 +343,6 @@
                     src="./imgs/trending-3.webp"
                     alt="TrendingProduct"
                     class="trending-img"
-                  />
-                  <img
-                    src="./imgs/badge.webp"
-                    alt="TrendingBadge"
-                    class="trending-badge"
                   />
                 </div>
                 <div class="trending-product-details">
@@ -372,11 +369,6 @@
                     alt="TrendingProduct"
                     class="trending-img"
                   />
-                  <img
-                    src="./imgs/badge.webp"
-                    alt="TrendingBadge"
-                    class="trending-badge"
-                  />
                 </div>
                 <div class="trending-product-details">
                   <div class="product-details">
@@ -398,13 +390,13 @@
             </div>
           </div>
           <aside class="trending-ad-banner">
-            <div class="trending-ad-header">
+            <header class="trending-ad-header">
               <h3 class="trending-ad-heading">Beginning to Creativity</h3>
               <p class="trending-ad-details">
                 Enjoy a 20% discount on all of Graphics and Designs for the
                 first-time payment.
               </p>
-            </div>
+            </header>
             <a href="#" class="trending-ad-btn">Shop Now</a>
           </aside>
         </div>
@@ -412,10 +404,7 @@
       <section class="collections-container">
         <div class="collections-inner-container">
           <div class="collections-text-container">
-            <h2 class="collections-heading">
-              Explore Digital
-              <span class="new-row"> </span>Collections
-            </h2>
+            <h2 class="collections-heading">Explore Digital Collections</h2>
             <p class="collections-text">
               Our diverse collections offer endless design<span class="new-row">
                 and creative possibilities for designers.</span
@@ -466,15 +455,15 @@
                 </div>
               </li>
             </ul>
-            <button class="collections-cycle-btn">
-              <img src="./imgs/arrow-right.webp" alt="#" />
+            <button type="button" class="collections-cycle-btn">
+              <img src="./imgs/arrow-right.svg" alt="#" />
             </button>
           </div>
         </div>
       </section>
       <section class="latest-container">
         <div class="latest-inner-container">
-          <div class="latest-header">
+          <header class="latest-header">
             <h2 class="latest-heading">Latest Products</h2>
             <a href="#" class="explore-latest underline-effect"
               >Explore Latest Works
@@ -482,7 +471,7 @@
                 <use xlink:href="./sprites/sprites.svg#right-arrow"></use>
               </svg>
             </a>
-          </div>
+          </header>
           <ul class="latest-products">
             <li class="latest-product">
               <div class="latest-img-container">
@@ -502,7 +491,11 @@
                     method="post"
                     class="latest-cart-form"
                   >
-                    <button class="latest-cart" aria-label="Add Cerea to cart">
+                    <button
+                      type="button"
+                      class="latest-cart"
+                      aria-label="Add Cerea to cart"
+                    >
                       <svg class="latest-cart-img">
                         <use href="./sprites/sprites.svg#cart"></use>
                       </svg>
@@ -530,6 +523,7 @@
                     class="latest-cart-form"
                   >
                     <button
+                      type="button"
                       class="latest-cart"
                       aria-label="Add La Petite to cart"
                     >
@@ -559,7 +553,11 @@
                     method="post"
                     class="latest-cart-form"
                   >
-                    <button class="latest-cart" aria-label="Add Gaya to cart">
+                    <button
+                      type="button"
+                      class="latest-cart"
+                      aria-label="Add Gaya to cart"
+                    >
                       <svg class="latest-cart-img">
                         <use href="./sprites/sprites.svg#cart"></use>
                       </svg>
@@ -587,6 +585,7 @@
                     class="latest-cart-form"
                   >
                     <button
+                      type="button"
                       class="latest-cart"
                       aria-label="Add Retro Computer to cart"
                     >
@@ -617,6 +616,7 @@
                     class="latest-cart-form"
                   >
                     <button
+                      type="button"
                       class="latest-cart"
                       aria-label="Add ArtVerse to cart"
                     >
@@ -647,6 +647,7 @@
                     class="latest-cart-form"
                   >
                     <button
+                      type="button"
                       class="latest-cart"
                       aria-label="Add Airport to cart"
                     >
@@ -676,7 +677,11 @@
                     method="post"
                     class="latest-cart-form"
                   >
-                    <button class="latest-cart" aria-label="Add Hazzel to cart">
+                    <button
+                      type="button"
+                      class="latest-cart"
+                      aria-label="Add Hazzel to cart"
+                    >
                       <svg class="latest-cart-img">
                         <use href="./sprites/sprites.svg#cart"></use>
                       </svg>
@@ -703,7 +708,11 @@
                     method="post"
                     class="latest-cart-form"
                   >
-                    <button class="latest-cart" aria-label="Add Chrev to cart">
+                    <button
+                      type="button"
+                      class="latest-cart"
+                      aria-label="Add Chrev to cart"
+                    >
                       <svg class="latest-cart-img">
                         <use href="./sprites/sprites.svg#cart"></use>
                       </svg>
@@ -790,7 +799,7 @@
       </section>
       <section class="blog-container">
         <div class="blog-inner-container">
-          <div class="blog-header">
+          <header class="blog-header">
             <div class="blog-header-text-container">
               <p class="blog-text">BLOG</p>
               <h2 class="blog-heading">
@@ -798,18 +807,18 @@
               </h2>
             </div>
             <div class="blog-cycle-container">
-              <button class="blog-cycle-back">
+              <button type="button" class="blog-cycle-back">
                 <svg class="latest-cycle-img">
                   <use href="./sprites/sprites.svg#arrow-left"></use>
                 </svg>
               </button>
-              <button class="blog-cycle-forward">
+              <button type="button" class="blog-cycle-forward">
                 <svg class="latest-cycle-img">
                   <use href="./sprites/sprites.svg#arrow-right"></use>
                 </svg>
               </button>
             </div>
-          </div>
+          </header>
           <ul class="blogs-list">
             <li class="blog-item">
               <article class="article-container">
@@ -876,16 +885,14 @@
           <h2 class="footer-heading">Stay ahead of the curve with us.</h2>
           <form action="#" class="footer-form">
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email address ..."
               class="footer-subscribe-input"
               required
             />
-            <input
-              type="submit"
-              value="Subscribe"
-              class="footer-subscribe-btn"
-            />
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+            </button>
           </form>
         </div>
         <div class="footer-nav-logo-wrap">
@@ -1000,7 +1007,7 @@
           </div>
           <div class="footer-text-container">
             <div class="footer-text-wrap">
-              <img src="./imgs/footer-logo.webp" alt="#" class="footer-logo" />
+              <img src="./imgs/footer-logo.svg" alt="#" class="footer-logo" />
               <p class="footer-text">
                 Your premium digital assets solution with high quality and
                 comprehensive range of products and services.
