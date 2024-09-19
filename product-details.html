@@ -21,7 +21,9 @@
     <header class="page-header">
       <div class="header-container">
         <nav class="navbar">
-          <a href="./index.html" class="nav-logo"> Pixmart. </a>
+          <a href="./index.html" class="nav-logo" width="79" height="17">
+            Pixmart.
+          </a>
           <ul class="nav-list">
             <li class="nav-item">
               <a href="./about.html" class="nav-link underline-effect">About</a>
@@ -72,17 +74,27 @@
               <div class="main-product-img-container">
                 <img
                   src="./imgs/product-main-1.webp"
-                  alt="ProductImg"
+                  alt="Main image of Vonix product"
                   class="active-product-image"
+                  width="711"
+                  height="509"
                 />
-                <button type="button" class="expand-img-btn">
+                <button
+                  type="button"
+                  class="expand-img-btn"
+                  aria-label="Expand image"
+                >
                   <svg class="expand-icon" width="32" height="32">
                     <use xlink:href="./sprites/sprites.svg#expand"></use>
                   </svg>
                 </button>
               </div>
               <div class="product-img-selector">
-                <button type="button" class="product-select-forward">
+                <button
+                  type="button"
+                  class="product-select-forward"
+                  aria-label="Previous image"
+                >
                   <svg class="cycle-product-imgs">
                     <use href="./sprites/sprites.svg#arrow-left"></use>
                   </svg>
@@ -91,33 +103,45 @@
                   <li class="product-img-item">
                     <img
                       src="./imgs/product-main-1.webp"
-                      alt="ProductImg"
+                      alt="Thumbnail of Vonix product - Image 1"
                       class="product-sub-img"
+                      width="142"
+                      height="116"
                     />
                   </li>
                   <li class="product-img-item">
                     <img
                       src="./imgs/product-main-2.webp"
-                      alt="ProductImg"
+                      alt="Thumbnail of Vonix product - Image 2"
                       class="product-sub-img"
+                      width="142"
+                      height="116"
                     />
                   </li>
                   <li class="product-img-item">
                     <img
                       src="./imgs/product-main-3.webp"
-                      alt="ProductImg"
+                      alt="Thumbnail of Vonix product - Image 3"
                       class="product-sub-img"
+                      width="142"
+                      height="116"
                     />
                   </li>
                   <li class="product-img-item">
                     <img
                       src="./imgs/product-main-4.webp"
-                      alt="ProductImg"
+                      alt="Thumbnail of Vonix product - Image 4"
                       class="product-sub-img"
+                      width="142"
+                      height="116"
                     />
                   </li>
                 </ul>
-                <button type="button" class="product-select-back">
+                <button
+                  type="button"
+                  class="product-select-back"
+                  aria-label="Next image"
+                >
                   <svg class="cycle-product-imgs">
                     <use href="./sprites/sprites.svg#arrow-right"></use>
                   </svg>
@@ -125,32 +149,33 @@
               </div>
             </figure>
           </div>
+
           <div class="product-right">
             <div class="product-hero-text">
               <div class="rating-container">
                 <ul class="star-rating">
                   <li class="star">
-                    <svg class="star-icon">
+                    <svg class="star-icon" width="16" height="16">
                       <use xlink:href="./sprites/sprites.svg#rating-star"></use>
                     </svg>
                   </li>
                   <li class="star">
-                    <svg class="star-icon">
+                    <svg class="star-icon" width="16" height="16">
                       <use xlink:href="./sprites/sprites.svg#rating-star"></use>
                     </svg>
                   </li>
                   <li class="star">
-                    <svg class="star-icon">
+                    <svg class="star-icon" width="16" height="16">
                       <use xlink:href="./sprites/sprites.svg#rating-star"></use>
                     </svg>
                   </li>
                   <li class="star">
-                    <svg class="star-icon">
+                    <svg class="star-icon" width="16" height="16">
                       <use xlink:href="./sprites/sprites.svg#rating-star"></use>
                     </svg>
                   </li>
                   <li class="star">
-                    <svg class="star-icon">
+                    <svg class="star-icon" width="16" height="16">
                       <use xlink:href="./sprites/sprites.svg#rating-star"></use>
                     </svg>
                   </li>
@@ -162,8 +187,10 @@
                 <div class="supplier-container">
                   <img
                     src="./imgs/supplier-img.webp"
-                    alt="SupplierLogo"
+                    alt="Tech Pioneers supplier logo"
                     class="supplier-logo"
+                    width="36"
+                    height="36"
                   />
                   <p class="supplier-name">Tech Pioneers</p>
                 </div>
@@ -174,6 +201,7 @@
                 significant impact online.
               </p>
             </div>
+
             <form
               class="product-selection-container"
               id="product-selection-form"
@@ -217,12 +245,14 @@
                   <p class="license-price" id="extended-price">$49.00</p>
                 </div>
               </div>
+
               <div class="quantity-container" id="quantity-container">
                 <div class="quantity-selector" id="quantity-selector">
                   <button
                     type="button"
                     class="quantity-button decrement"
                     id="decrement"
+                    aria-label="Decrease quantity"
                   >
                     <svg class="decrement-icon">
                       <use xlink:href="./sprites/sprites.svg#minus-icon"></use>
@@ -235,11 +265,13 @@
                     name="quantity"
                     value="1"
                     min="1"
+                    aria-label="Select product quantity"
                   />
                   <button
                     type="button"
                     class="quantity-button increment"
                     id="increment"
+                    aria-label="Increase quantity"
                   >
                     <svg class="increment-icon">
                       <use xlink:href="./sprites/sprites.svg#plus-icon"></use>
@@ -248,11 +280,22 @@
                 </div>
                 <p class="current-price" id="current-price">$16.00</p>
               </div>
+
               <div class="product-btns" id="product-btns">
-                <button type="button" class="preview-btn" id="preview-btn">
+                <button
+                  type="button"
+                  class="preview-btn"
+                  id="preview-btn"
+                  aria-label="Preview product"
+                >
                   Preview
                 </button>
-                <button type="submit" class="purchase-btn" id="purchase-btn">
+                <button
+                  type="submit"
+                  class="purchase-btn"
+                  id="purchase-btn"
+                  aria-label="Purchase product"
+                >
                   Purchase Now
                 </button>
               </div>
@@ -309,6 +352,8 @@
                       src="./imgs/calendar.svg"
                       alt="DetailsIcon"
                       class="details-content-img"
+                      width="24"
+                      height="24"
                     />
                     Created
                   </dt>
@@ -325,6 +370,8 @@
                       src="./imgs/folder.svg"
                       alt="DetailsIcon"
                       class="details-content-img"
+                      width="24"
+                      height="24"
                     />
                     File Size
                   </dt>
@@ -337,6 +384,8 @@
                       src="./imgs/dimensions.svg"
                       alt="DetailsIcon"
                       class="details-content-img"
+                      width="24"
+                      height="24"
                     />
                     File Dimensions
                   </dt>
@@ -349,6 +398,8 @@
                       src="./imgs/global.svg"
                       alt="DetailsIcon"
                       class="details-content-img"
+                      width="24"
+                      height="24"
                     />
                     Compatible App
                   </dt>
@@ -400,99 +451,103 @@
             </a>
           </header>
           <div class="article-list">
-            <article class="related-product">
-              <img
-                src="./imgs/related-product-1.webp"
-                alt="Product Description"
-                class="related-img"
-              />
-              <div class="related-details">
-                <div class="related-details-text">
-                  <a href="#" class="related-product-heading underline-effect"
-                    >SkyHomes</a
-                  >
-                  <p class="related-description">Real Estate Landing Page</p>
-                </div>
-                <div class="related-product-footer">
-                  <p class="related-price">$11.00</p>
-                  <button type="button" class="add-product-btn">
-                    <svg class="cart-icon" width="20" height="20">
-                      <use href="./sprites/sprites.svg#cart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="related-product">
-              <img
-                src="./imgs/related-product-2.webp"
-                alt="Product Description"
-                class="related-img"
-              />
-              <div class="related-details">
-                <div class="related-details-text">
-                  <a href="#" class="related-product-heading underline-effect"
-                    >Gaya</a
-                  >
-                  <p class="related-description">Fashion Store Mobile App</p>
-                </div>
-                <div class="related-product-footer">
-                  <p class="related-price">$20.00</p>
-                  <button type="button" class="add-product-btn">
-                    <svg class="cart-icon" width="20" height="20">
-                      <use href="./sprites/sprites.svg#cart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="related-product">
-              <img
-                src="./imgs/related-product-3.webp"
-                alt="Product Description"
-                class="related-img"
-              />
-              <div class="related-details">
-                <div class="related-details-text">
-                  <a href="#" class="related-product-heading underline-effect"
-                    >Jaxon</a
-                  >
-                  <p class="related-description">Presentation</p>
-                </div>
-                <div class="related-product-footer">
-                  <p class="related-price">$5.00</p>
-                  <button type="button" class="add-product-btn">
-                    <svg class="cart-icon" width="20" height="20">
-                      <use href="./sprites/sprites.svg#cart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="related-product">
-              <img
-                src="./imgs/related-product-4.webp"
-                alt="Product Description"
-                class="related-img"
-              />
-              <div class="related-details">
-                <div class="related-details-text">
-                  <a href="#" class="related-product-heading underline-effect"
-                    >Thinky</a
-                  >
-                  <p class="related-description">Blog News Mobile App</p>
-                </div>
-                <div class="related-product-footer">
-                  <p class="related-price">$18.00</p>
-                  <button type="button" class="add-product-btn">
-                    <svg class="cart-icon" width="20" height="20">
-                      <use href="./sprites/sprites.svg#cart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
+  <article class="related-product">
+    <img
+      src="./imgs/related-product-1.webp"
+      alt="SkyHomes Real Estate Landing Page preview"
+      class="related-img"
+      width="302"
+      height="260"
+    />
+    <div class="related-details">
+      <div class="related-details-text">
+        <a href="#" class="related-product-heading underline-effect">SkyHomes</a>
+        <p class="related-description">Real Estate Landing Page</p>
+      </div>
+      <div class="related-product-footer">
+        <p class="related-price">$11.00</p>
+        <button type="button" class="add-product-btn" aria-label="Add SkyHomes to cart">
+          <svg class="cart-icon" width="20" height="20">
+            <use href="./sprites/sprites.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </article>
+
+  <article class="related-product">
+    <img
+      src="./imgs/related-product-2.webp"
+      alt="Gaya Fashion Store Mobile App preview"
+      class="related-img"
+      width="302"
+      height="260"
+    />
+    <div class="related-details">
+      <div class="related-details-text">
+        <a href="#" class="related-product-heading underline-effect">Gaya</a>
+        <p class="related-description">Fashion Store Mobile App</p>
+      </div>
+      <div class="related-product-footer">
+        <p class="related-price">$20.00</p>
+        <button type="button" class="add-product-btn" aria-label="Add Gaya to cart">
+          <svg class="cart-icon" width="20" height="20">
+            <use href="./sprites/sprites.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </article>
+
+  <article class="related-product">
+    <img
+      src="./imgs/related-product-3.webp"
+      alt="Jaxon Presentation preview"
+      class="related-img"
+      width="302"
+      height="260"
+    />
+    <div class="related-details">
+      <div class="related-details-text">
+        <a href="#" class="related-product-heading underline-effect">Jaxon</a>
+        <p class="related-description">Presentation</p>
+      </div>
+      <div class="related-product-footer">
+        <p class="related-price">$5.00</p>
+        <button type="button" class="add-product-btn" aria-label="Add Jaxon to cart">
+          <svg class="cart-icon" width="20" height="20">
+            <use href="./sprites/sprites.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </article>
+
+  <article class="related-product">
+    <img
+      src="./imgs/related-product-4.webp"
+      alt="Thinky Blog News Mobile App preview"
+      class="related-img"
+      width="302"
+      height="260"
+    />
+    <div class="related-details">
+      <div class="related-details-text">
+        <a href="#" class="related-product-heading underline-effect">Thinky</a>
+        <p class="related-description">Blog News Mobile App</p>
+      </div>
+      <div class="related-product-footer">
+        <p class="related-price">$18.00</p>
+        <button type="button" class="add-product-btn" aria-label="Add Thinky to cart">
+          <svg class="cart-icon" width="20" height="20">
+            <use href="./sprites/sprites.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
         </div>
       </section>
     </main>
@@ -518,13 +573,20 @@
             src="./imgs/footer-explore-2.webp"
             alt=""
             class="explore-photo"
+            width="640"
+            height="408"
           />
         </div>
       </div>
       <div class="footer-nav-container">
         <header class="footer-header">
           <a href="./index.html" class="footer-heading-link">
-            <img src="./imgs/footer-logo-2.svg" alt="" />
+            <img
+              src="./imgs/footer-logo-2.svg"
+              alt=""
+              width="300"
+              height="58"
+            />
           </a>
           <p class="footer-text">
             Your premium digital assets solution with high quality and
