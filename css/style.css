@@ -450,9 +450,10 @@ body {
   height: 328px;
   border-radius: 20px;
   background-color: var(--back-lightgray);
-  border: 2px solid transparent;
 }
-.trending-product:hover .trending-product-illustration {
+.trending-product:hover .trending-img {
+  border-radius: 20px;
+  width: 400px;
   border: 2px solid var(--text-blue);
 }
 .trending-product-illustration::after {
