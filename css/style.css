@@ -1099,15 +1099,15 @@ body {
   background-color: var(--text-white);
   transition: background-color 0.3s ease;
 }
-.home-page .social-item{
-    background: var(--text-light-blue);
+.home-page .social-item {
+  background: var(--text-light-blue);
 }
-.category-page .social-item{
-    width: 64px;
+.category-page .social-item {
+  width: 64px;
   height: 64px;
   background: var(--text-light-blue);
 }
-.footer-follow-icon{
+.footer-follow-icon {
   color: var(--text-blue);
   transition: color 0.3s ease;
 }
@@ -1809,13 +1809,13 @@ body {
   flex-direction: column;
   gap: 72px;
 }
-.contact-page .footer-nav-container,.product-details-page .footer-nav-container {
+.contact-page .footer-nav-container,
+.product-details-page .footer-nav-container {
   padding-top: 318px;
 }
-.product-details-page .page-footer{
+.product-details-page .page-footer {
   margin-top: 250px;
 }
-
 .footer-header {
   width: 424px;
   height: 126px;
@@ -1881,7 +1881,7 @@ body {
   line-height: 1.33;
   color: var(--text-white);
 }
-.category-page .newsletter-heading{
+.category-page .newsletter-heading {
   color: var(--text-black);
 }
 .product-details-page .footer-subscribe-input,
@@ -1917,7 +1917,7 @@ body {
   text-align: right;
   color: var(--text-white);
 }
-.category-page .follow-social-heading{
+.category-page .follow-social-heading {
   color: var(--text-black);
 }
 .contact-page .social-item,
